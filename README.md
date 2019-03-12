@@ -165,10 +165,102 @@ A rule can either be a Decision or a Score.
 | Applicant Age | Applicant Ownership| Business Ownership | Decision
 | :----------: | :----------------: | :----------------: | --------:|
 | >=35        | in [Owned by Self, Owned by Family]                | in [Owned by Self, Owned by Family] | GO       |
+| >=35        | in [Owned by Self, Owned by Family]                | in [Rented] | GO       |
 | >=35        | in [Rented]                | in [Owned by Self, Owned by Family] | GO       |
 | >=35        | in [Rented]                | in [Rented] | NO GO       |
 | <35        | in [Rented]                | in [Rented] | NO GO       |
 | <35        | in [Owned by Self, Owned by Family]                | in [Rented] | NO GO       |
+| <35        | in [Rented]                | in  [Owned by Self, Owned by Family] | NO GO       |
 | <35        | in [Owned by Self, Owned by Family]                | in [Owned by Self, Owned by Family] | GO       |
 
 ### Rule specification
+```json
+{
+  "rule_name": "eligibility_criteria",
+  "rule_description": "Eligibility Criteria",
+  "rule_type": "decision",
+  "rule_set": {
+    "set_name": "eligibility_criteria",
+    "rule_set_type": "evaluate",
+    "rule_rows": [
+      {
+        "antecedent": {
+          "@when_all": [
+            {
+              "token_category": "organic",
+              "token_name": "applicant_age",
+              "operator": ">=",
+              "eval_value": 35,
+              "token_type": "numeric"
+            },
+            {
+              "@when_any": [
+                {
+                  "token_category": "organic",
+                  "token_name": "applicant_ownership",
+                  "operator": "in_list",
+                  "eval_value": [
+                    "Owned by Self",
+                    "Owned by Family"
+                  ],
+                  "token_type": "string"
+                },
+                {
+                  "token_category": "organic",
+                  "token_name": "business_ownership",
+                  "operator": "in_list",
+                  "eval_value": [
+                    "Owned by Self",
+                    "Owned by Family"
+                  ],
+                  "token_type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        "consequent": {
+          "decision": "GO"
+        }
+      },
+      {
+        "antecedent": {
+          "@when_all": [
+            {
+              "token_category": "organic",
+              "token_name": "applicant_age",
+              "operator": "<=",
+              "eval_value": 35,
+              "token_type": "numeric"
+            },
+            {
+              "token_category": "organic",
+              "token_name": "applicant_ownership",
+              "operator": "in_list",
+              "eval_value": [
+                "Owned by Self",
+                "Owned by Family"
+              ],
+              "token_type": "string"
+            },
+            {
+              "token_category": "organic",
+              "token_name": "business_ownership",
+              "operator": "in_list",
+              "eval_value": [
+                "Owned by Self",
+                "Owned by Family"
+              ],
+              "token_type": "string"
+            }
+          ]
+        },
+        "consequent": {
+          "decision": "GO"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
+```

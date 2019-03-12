@@ -1,0 +1,88 @@
+{
+  "rule_name": "eligibility_criteria",
+  "rule_description": "Eligibility Criteria",
+  "rule_type": "decision",
+  "rule_set": {
+    "set_name": "eligibility_criteria",
+    "rule_set_type": "evaluate",
+    "rule_rows": [
+      {
+        "antecedent": {
+          "@when_all": [
+            {
+              "token_category": "organic",
+              "token_name": "applicant_age",
+              "operator": ">=",
+              "eval_value": 35,
+              "token_type": "numeric"
+            },
+            {
+              "@when_any": [
+                {
+                  "token_category": "organic",
+                  "token_name": "applicant_ownership",
+                  "operator": "in_list",
+                  "eval_value": [
+                    "Owned by Self",
+                    "Owned by Family"
+                  ],
+                  "token_type": "string"
+                },
+                {
+                  "token_category": "organic",
+                  "token_name": "business_ownership",
+                  "operator": "in_list",
+                  "eval_value": [
+                    "Owned by Self",
+                    "Owned by Family"
+                  ],
+                  "token_type": "string"
+                }
+              ]
+            }
+          ]
+        },
+        "consequent": {
+          "decision": "GO"
+        }
+      },
+      {
+        "antecedent": {
+          "@when_all": [
+            {
+              "token_category": "organic",
+              "token_name": "applicant_age",
+              "operator": "<=",
+              "eval_value": 35,
+              "token_type": "numeric"
+            },
+            {
+              "token_category": "organic",
+              "token_name": "applicant_ownership",
+              "operator": "in_list",
+              "eval_value": [
+                "Owned by Self",
+                "Owned by Family"
+              ],
+              "token_type": "string"
+            },
+            {
+              "token_category": "organic",
+              "token_name": "business_ownership",
+              "operator": "in_list",
+              "eval_value": [
+                "Owned by Self",
+                "Owned by Family"
+              ],
+              "token_type": "string"
+            }
+          ]
+        },
+        "consequent": {
+          "decision": "GO"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
