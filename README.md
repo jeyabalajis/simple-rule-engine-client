@@ -41,7 +41,7 @@ The aforementioned decisions involve evaluation of multiple parameters. You simp
  - The evaluations and/or scores will _always_ change over a period of time to adjust to business needs 
 - The _rules_ will also change based on the nature of the business product.
 
-**The simple-serverless-rule-engine solves such dynamic decision making problems by abstracting the scoring or decision making into an engine and providing a standard rule template (JSON) to author the decisions.** 
+> The simple-serverless-rule-engine solves such dynamic decision making problems by abstracting the scoring or decision making into an engine and providing a standard rule template (JSON) to author the decisions.** 
 By doing so, we can conveniently treat the rule engine as a service and just by passing all the facts (a.k.a inputs), we get the the corresponding decisions or scores (output)!
 
 ### Benefits
@@ -57,7 +57,7 @@ The simple-serverless-rule-engine is composed of two parts:
 
 The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. you can build a small portion of the score as an independent rule and _“use”_ this rule in another rule. 
 
-**At the heart of simple-serverless-rule-engine is the rule declaration language.** 
+> At the heart of simple-serverless-rule-engine is the rule declaration language. 
 
 A rule can either be a Decision or a Score.
 
@@ -85,23 +85,16 @@ A rule can either be a Decision or a Score.
 - For evaluating numeric facts, a numeric operator is used. It can be one of (<=, <, >, >=, ==, <>, between, is_none)
 - For evaluating string facts, a string operator is used. It can be one of (in_list, contains, is_none, equals)
 - You can mix evaluation of more than one fact & combine the result with an “and” or “or” condition.
-
-You can perform complex evaluations of multiple facts recursively in the antecedent.
-
-Example: Let us say that you want to set a score based on the following condition:
-
-(The applicant age is > 35 AND applicant ownership is Owned) OR business ownership is Owned.
-OR
-(The applicant age is <= 35 AND applicant ownership is Rented) OR business ownership is Rented.
-
-This would be modeled as {TBD: Showcase the Rule template for this scenario}
-
-The system allows a total recursion depth of 5 to allow complex evaluations.
-
-Pro tip: You can use the result of a rule as a token! This way you can build simple modular rules & combine them to get to a bigger rule. For example, you can use a particular decision to feed into a bigger decision.
-
-The consequent tells the rule engine what to do when the antecedent is evaluated as True. In the case of a score rule, you must specify a score value (numeric).
-
-In the case of a Decision rule, you must specify a decision. The decision can be a simple value (0 or 1, yes or no etc.) (or) it can be a complex JSON in itself!
+- You can perform complex evaluations involving multiple facts combining AND and OR conditions recursively in the antecedent. See Examples.
+- The system allows a total recursion depth of 5 to allow complex evaluations.
+- You can use the result of a rule as a token! This way you can build simple modular rules & combine them to get to a bigger rule.
 
 # Examples
+
+## A simple decision tree involving facts
+
+### Decision matrix
+
+| Bureau Score | Marital Status | Business Ownership | Decision
+| :----------: | :----------------: | :----------------: | --------:|
+| between 650 and 800        | in [Married, Unspecified]                | in [Owned by Self, Owned by Family] | GO       |
