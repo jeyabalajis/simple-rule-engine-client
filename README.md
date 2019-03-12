@@ -25,6 +25,10 @@ zappa deploy {{your stage name}}
 
 ```
 
+# Table of Contents
+- [Why Rule Engine](#Why Rule Engine)
+- [Concepts](#Concepts)
+- [Examples](#Examples)
 
 # Why Rule Engine?
 Decision making has always been at the heart of any business. In certain industries (such as Lending), some of the decisions made are so dynamic & at a flux that programming these decisions by hand is counter-productive.
