@@ -85,7 +85,7 @@ A rule can either be a Decision or a Score.
 - For evaluating numeric facts, a numeric operator is used. It can be one of (<=, <, >, >=, ==, <>, between, is_none)
 - For evaluating string facts, a string operator is used. It can be one of (in_list, contains, is_none, equals)
 - You can mix evaluation of more than one fact & combine the result with an “and” or “or” condition.
-- You can perform complex evaluations involving multiple facts combining AND and OR conditions recursively in the antecedent. See Examples.
+- You can perform complex evaluations involving multiple facts combining AND and OR conditions recursively in the antecedent. See [Examples](#Examples).
 - The system allows a total recursion depth of 5 to allow complex evaluations.
 - You can use the result of a rule as a token! This way you can build simple modular rules & combine them to get to a bigger rule.
 
