@@ -26,7 +26,7 @@ zappa deploy {{your stage name}}
 ```
 
 # Table of Contents
-- [Why Rule Engine](# Why Rule Engine)
+- [Why Rule Engine](#Why-Rule-Engine)
 - [Concepts](#Concepts)
 - [Examples](#Examples)
 
