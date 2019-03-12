@@ -4,9 +4,9 @@ A __lightweight__ yet __powerful__ rule engine that allows declarative specifica
 ## Key Features
 1. Ability to __declaratively__ author both Scoring and Decision Rules.
 2. Ability to __version control__ rule declarations thus enabling auditing of rule changes over a period of time.
-3. Ability to author _chained rules_. Evaluation of one rule can refer to the result of another rule, thus enabling 
+3. Ability to author **_chained rules_**. Evaluation of one rule can refer to the result of another rule, thus enabling 
 modular, hierarchical rules. 
-4. The rule engine is state-less and server less - perfect for hosting it as an independent micro-service.
+4. The rule engine is __state-less__ and __server less__ - perfect for hosting it as an independent micro-service.
 5. Written in Python 3.6 
 
 ## Installation Instructions
@@ -157,3 +157,18 @@ A rule can either be a Decision or a Score.
     "version" : 1
 }
 ```
+
+## A complex decision tree involving multiple AND  and OR conditions
+
+### Decision matrix
+
+| Applicant Age | Applicant Ownership| Business Ownership | Decision
+| :----------: | :----------------: | :----------------: | --------:|
+| >=35        | in [Owned by Self, Owned by Family]                | in [Owned by Self, Owned by Family] | GO       |
+| >=35        | in [Rented]                | in [Owned by Self, Owned by Family] | GO       |
+| >=35        | in [Rented]                | in [Rented] | NO GO       |
+| <35        | in [Rented]                | in [Rented] | NO GO       |
+| <35        | in [Owned by Self, Owned by Family]                | in [Rented] | NO GO       |
+| <35        | in [Owned by Self, Owned by Family]                | in [Owned by Self, Owned by Family] | GO       |
+
+### Rule specification
