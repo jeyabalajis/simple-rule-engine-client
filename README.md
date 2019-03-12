@@ -98,3 +98,58 @@ A rule can either be a Decision or a Score.
 | Bureau Score | Marital Status | Business Ownership | Decision
 | :----------: | :----------------: | :----------------: | --------:|
 | between 650 and 800        | in [Married, Unspecified]                | in [Owned by Self, Owned by Family] | GO       |
+
+### Rule specification
+```json
+{ 
+    "rule_name" : "eligibility_criteria", 
+    "rule_description" : "Eligibility Criteria", 
+    "rule_type" : "decision", 
+    "rule_set" : {
+        "set_name" : "eligibility_criteria", 
+        "rule_set_type" : "evaluate", 
+        "rule_rows" : [
+            {
+                "antecedent" : {
+                    "@when_all" : [
+                        {
+                            "token_category" : "organic", 
+                            "token_name" : "cibil_score", 
+                            "operator" : "between", 
+                            "eval_value" : {
+                                "low" : 650, 
+                                "high" : 800
+                            }, 
+                            "token_type" : "numeric"
+                        }, 
+                        {
+                            "token_category" : "organic", 
+                            "token_name" : "marital_status", 
+                            "operator" : "in_list", 
+                            "eval_value" : [
+                                "Married", 
+                                "Unspecified"
+                            ], 
+                            "token_type" : "string"
+                        }, 
+                        {
+                            "token_category" : "organic", 
+                            "token_name" : "business_ownership", 
+                            "operator" : "in_list", 
+                            "eval_value" : [
+                                "Owned by Self", 
+                                "Owned by Family"
+                            ], 
+                            "token_type" : "string"
+                        }
+                    ]
+                }, 
+                "consequent" : {
+                    "decision" : "GO"
+                }
+            }
+        ]
+    }, 
+    "version" : 1
+}
+```
