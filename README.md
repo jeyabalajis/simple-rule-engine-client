@@ -30,7 +30,7 @@ zappa deploy {{your stage name}}
 - [Concepts](#Concepts)
 - [Examples](#Examples)
 
-# Why Rule Engine?
+#Why Rule Engine?
 Decision making has always been at the heart of any business. In certain industries (such as Lending), some of the decisions made are so dynamic & at a flux that programming these decisions by hand is counter-productive.
 
 Take the example of the decision of giving someone a loan. It primarily involves ascertaining to fundamental factors:
