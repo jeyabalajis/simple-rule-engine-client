@@ -13,7 +13,7 @@ modular, hierarchical rules.
 1. Clone or download the project into your local repository.
 2. Create a virtual environment with Python 3.6 or above and activate the same.
 ```python
-virtualenv .env --python=Pyhton3.6
+virtualenv .env -- python=Pyhton3.6
 source .env/bin/activate
 ```
 3. To deploy this as a FaaS through Zappa, use [Zappa](https://www.zappa.io/), a framework for Serverless Python Web Services - Powered by AWS Lambda and API Gateway
@@ -33,7 +33,7 @@ zappa deploy {{your stage name}}
 # Why Rule Engine?
 Decision making has always been at the heart of any business. In certain industries (such as Lending), some of the decisions made are so dynamic & at a flux that programming these decisions by hand is counter-productive.
 
-Take the example of the decision of giving someone a loan. It primarily involves ascertaining to fundamental factors:
+Take the example of the decision of giving someone a loan. It primarily involves ascertaining two fundamental factors:
 - Ability to repay the loan.
 - Intent to repay the loan.
 
@@ -45,8 +45,8 @@ The aforementioned decisions involve evaluation of multiple parameters. You simp
  - The evaluations and/or scores will _always_ change over a period of time to adjust to business needs 
 - The _rules_ will also change based on the nature of the business product.
 
-> The simple-serverless-rule-engine solves such dynamic decision making problems by abstracting the scoring or decision making into an engine and providing a standard rule template (JSON) to author the decisions.** 
-By doing so, we can conveniently treat the rule engine as a service and just by passing all the facts (a.k.a inputs), we get the the corresponding decisions or scores (output)!
+> The simple-serverless-rule-engine solves such dynamic decision making problems by abstracting the scoring or decision making into a _framework_ and providing a standard rule template (JSON) to author the rules. 
+> As a result, we can conveniently treat the rule engine as a service and just by passing all the facts (a.k.a inputs), we get the the corresponding decisions or scores (output)!
 
 ### Benefits
 - Declarative authoring of rules. This can be done by a business analyst, rather than a developer. The developer just focuses on extracting the facts that are required to be passed into the engine.
@@ -63,7 +63,7 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
 
 > At the heart of simple-serverless-rule-engine is the rule declaration language. 
 
-A rule can either be a Decision or a Score.
+> A rule can either be a Decision or a Score.
 
 ## Score rule:
 - A Score rule is composed of one or many rule sets. 
