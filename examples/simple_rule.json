@@ -1,0 +1,271 @@
+{ 
+    "rule_name" : "bureau_score_loans", 
+    "rule_description" : "bureau_score_loans", 
+    "rule_type" : "score", 
+    "rule_set" : [
+        {
+            "set_name" : "no_of_running_bl_pl", 
+            "weight" : 0.3, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 7.0
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : -40.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 2.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "last_loan_drawn_in_months", 
+            "weight" : 0.3, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 3.0
+                    }, 
+                    "consequent" : {
+                        "score" : -30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 12.0
+                    }, 
+                    "consequent" : {
+                        "score" : 40.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 12.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "no_of_bl_paid_off_successfully", 
+            "weight" : 0.2, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 2.0
+                    }, 
+                    "consequent" : {
+                        "score" : 70.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : 85.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "value_of_bl_paid_successfully", 
+            "weight" : 0.2, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 100000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 35.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 400000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 50.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 400000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }
+    ], 
+}

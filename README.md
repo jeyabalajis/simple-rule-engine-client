@@ -173,6 +173,10 @@ A rule can either be a Decision or a Score.
 | <35        | in [Rented]                | in  [Owned by Self, Owned by Family] | NO GO       |
 | <35        | in [Owned by Self, Owned by Family]                | in [Owned by Self, Owned by Family] | GO       |
 
+- when the applicant age is >=35, either of applicant ownership or business ownership must be Owned.
+- When the applicant age is <35, both the applicant ownership and business ownership must be Owned.
+
+
 ### Rule specification
 ```json
 {
@@ -262,5 +266,331 @@ A rule can either be a Decision or a Score.
     ]
   },
   "version": 1
+}
+```
+
+## A simple scoring rule
+|Rule set Name|Weightage|
+|:-----------:|:-------:|
+|no_of_running_bl_pl|0.3|
+|last_loan_drawn_in_months|0.3|
+|no_of_bl_paid_off_successfully|0.2|
+|value_of_bl_paid_successfully|0.2|
+
+### no_of_running_bl_pl
+|Condition|Score|
+|:-----------:|:-------:|
+|no_of_running_bl_pl >= 7 |-100|
+|no_of_running_bl_pl >= 4 |-40|
+|no_of_running_bl_pl >= 2 |30|
+|no_of_running_bl_pl >= 0 |100|
+|no_of_running_bl_pl is none |100|
+
+### last_loan_drawn_in_months
+|Condition|Score|
+|:-----------:|:-------:|
+|last_loan_drawn_in_months == 0 |30|
+|last_loan_drawn_in_months <3 |-30|
+|last_loan_drawn_in_months <= 12 |40|
+|last_loan_drawn_in_months >12 |100|
+|last_loan_drawn_in_months is none |100|
+
+
+### no_of_bl_paid_off_successfully
+|Condition|Score|
+|:-----------:|:-------:|
+|no_of_bl_paid_off_successfully == 0 |30|
+|no_of_bl_paid_off_successfully <=2 |70|
+|no_of_bl_paid_off_successfully <= 4 |85|
+|no_of_bl_paid_off_successfully >4 |100|
+|no_of_bl_paid_off_successfully is none |100|
+
+### value_of_bl_paid_successfully
+|Condition|Score|
+|:-----------:|:-------:|
+|value_of_bl_paid_successfully == 0 |30|
+|value_of_bl_paid_successfully <=100000 |35|
+|value_of_bl_paid_successfully <= 400000 |50|
+|value_of_bl_paid_successfully > 400000 |100|
+|value_of_bl_paid_successfully is none |100|
+
+### Test Cases
+|no_of_running_bl_pl|last_loan_drawn_in_months|no_of_bl_paid_off_successfully|value_of_bl_paid_successfully|Final Score|
+|:-----------:|:-------:|:-----------:|:-------:|:---------:|
+|8|2|0|0| -100*0.3 + -30*0.3 + 30*0.2 + 30*0.2 = -27|  
+|0|13|5|none| 100*0.3 + 100*0.3 + 100*0.2 + 100*0.2 = 100|
+
+### Rule Specification
+```json
+{ 
+    "rule_name" : "bureau_score_loans", 
+    "rule_description" : "bureau_score_loans", 
+    "rule_type" : "score", 
+    "rule_set" : [
+        {
+            "set_name" : "no_of_running_bl_pl", 
+            "weight" : 0.3, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 7.0
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : -40.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 2.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_running_bl_pl", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "last_loan_drawn_in_months", 
+            "weight" : 0.3, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 3.0
+                    }, 
+                    "consequent" : {
+                        "score" : -30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 12.0
+                    }, 
+                    "consequent" : {
+                        "score" : 40.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 12.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "last_loan_drawn_in_months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "no_of_bl_paid_off_successfully", 
+            "weight" : 0.2, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 2.0
+                    }, 
+                    "consequent" : {
+                        "score" : 70.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : 85.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 4.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "no_of_bl_paid_off_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "value_of_bl_paid_successfully", 
+            "weight" : 0.2, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 100000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 35.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 400000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 50.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">", 
+                        "eval_value" : 400000.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "value_of_bl_paid_successfully", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }
+    ]
 }
 ```

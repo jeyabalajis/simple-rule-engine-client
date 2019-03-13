@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,45 +18,115 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="552">
-                <caret line="264" column="1" lean-forward="false" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
+              <first_editor relative-caret-position="412">
+                <caret line="593" column="5" lean-forward="true" selection-start-line="593" selection-start-column="5" selection-end-line="593" selection-end-column="5" />
                 <folding>
-                  <marker date="1552365911689" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="6534:8125" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="6548:8115" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="6581:8010" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="6617:7992" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
-                  <marker date="1552365911689" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="7308:7429" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="7759:7890" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="9182:11561" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="9310:11543" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="9402:11539" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="9410:10544" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="9434:10474" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="9459:10464" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="9473:9678" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="9692:10452" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="9721:10438" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="9739:10072" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="9916:10012" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="10090:10422" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="10266:10362" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="10498:10536" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="10552:11533" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="10576:11463" ph="{...}" />
-                  <marker date="1552365911689" expanded="true" signature="10601:11453" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="10615:10820" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="10834:11131" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="10995:11079" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="11145:11441" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-                  <marker date="1552365911689" expanded="true" signature="11305:11389" ph="[...]" />
-                  <marker date="1552365911689" expanded="true" signature="11487:11525" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+                  <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+                  <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+                  <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+                  <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+                  <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -136,9 +207,9 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -146,8 +217,8 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -171,42 +242,112 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1552365911689" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6534:8125" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6548:8115" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6581:8010" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6617:7992" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
-              <marker date="1552365911689" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7308:7429" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7759:7890" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9182:11561" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9310:11543" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9402:11539" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9410:10544" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9434:10474" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9459:10464" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9473:9678" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9692:10452" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9721:10438" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9739:10072" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9916:10012" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10090:10422" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10266:10362" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10498:10536" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10552:11533" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10576:11463" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10601:11453" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10615:10820" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10834:11131" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10995:11079" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11145:11441" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="11305:11389" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11487:11525" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -219,42 +360,112 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1552365911689" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6534:8125" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6548:8115" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6581:8010" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6617:7992" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
-              <marker date="1552365911689" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7308:7429" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7759:7890" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9182:11561" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9310:11543" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9402:11539" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9410:10544" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9434:10474" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9459:10464" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9473:9678" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9692:10452" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9721:10438" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9739:10072" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9916:10012" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10090:10422" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10266:10362" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10498:10536" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10552:11533" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10576:11463" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10601:11453" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10615:10820" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10834:11131" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10995:11079" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11145:11441" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="11305:11389" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11487:11525" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -267,42 +478,112 @@
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1552365911689" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6534:8125" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6548:8115" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6581:8010" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6617:7992" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
-              <marker date="1552365911689" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7308:7429" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7759:7890" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9182:11561" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9310:11543" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9402:11539" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9410:10544" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9434:10474" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9459:10464" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9473:9678" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9692:10452" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9721:10438" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9739:10072" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9916:10012" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10090:10422" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10266:10362" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10498:10536" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10552:11533" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10576:11463" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10601:11453" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10615:10820" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10834:11131" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10995:11079" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11145:11441" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="11305:11389" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11487:11525" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -312,45 +593,233 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="552">
-            <caret line="264" column="1" lean-forward="false" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding>
-              <marker date="1552365911689" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6534:8125" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6548:8115" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6581:8010" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="6617:7992" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
-              <marker date="1552365911689" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7308:7429" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="7759:7890" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9182:11561" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9310:11543" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9402:11539" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9410:10544" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9434:10474" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9459:10464" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9473:9678" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9692:10452" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="9721:10438" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="9739:10072" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="9916:10012" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10090:10422" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10266:10362" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10498:10536" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10552:11533" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10576:11463" ph="{...}" />
-              <marker date="1552365911689" expanded="true" signature="10601:11453" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="10615:10820" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10834:11131" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="10995:11079" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11145:11441" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1552365911689" expanded="true" signature="11305:11389" ph="[...]" />
-              <marker date="1552365911689" expanded="true" signature="11487:11525" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="412">
+            <caret line="593" column="5" lean-forward="true" selection-start-line="593" selection-start-column="5" selection-end-line="593" selection-end-column="5" />
+            <folding>
+              <marker date="1552438966446" expanded="true" signature="6281:8153" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6425:8131" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6534:8125" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6548:8115" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6581:8010" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="6617:7992" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="6643:7062" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="6859:6981" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552438966446" expanded="true" signature="7089:7509" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7308:7429" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="7536:7970" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="7759:7890" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="8044:8101" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9385:11764" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9513:11746" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9605:11742" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9613:10747" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9637:10677" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9662:10667" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9676:9881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="9895:10655" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="9924:10641" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="9942:10275" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10119:10215" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10293:10625" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10469:10565" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10701:10739" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="10755:11736" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10779:11666" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="10804:11656" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="10818:11023" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11037:11334" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11198:11282" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11348:11644" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="11508:11592" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="11690:11728" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13415:23378" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13552:23376" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13562:15964" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="13711:15954" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="13729:14165" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="13766:14045" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14083:14147" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14184:14619" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14221:14500" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14538:14601" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="14638:15072" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="14675:14954" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="14992:15054" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15091:15526" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15128:15407" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15445:15508" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15545:15940" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="15582:15821" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="15859:15922" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="15975:18411" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16130:18401" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="16148:16588" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16185:16470" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16508:16570" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="16607:17047" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="16644:16928" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="16966:17029" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17066:17507" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17103:17389" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17427:17489" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17526:17967" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="17563:17848" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="17886:17949" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="17986:18387" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18023:18268" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18306:18369" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="18422:20886" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18582:20876" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="18600:19045" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="18637:18927" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="18965:19027" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19064:19509" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19101:19391" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19429:19491" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19528:19973" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="19565:19855" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="19893:19955" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552438966446" expanded="true" signature="19992:20437" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20029:20318" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20356:20419" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20456:20862" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="20493:20743" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="20781:20844" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="20897:23370" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21056:23360" ph="[...]" />
+              <marker date="1552438966446" expanded="true" signature="21074:21518" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21111:21400" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21438:21500" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552438966446" expanded="true" signature="21537:21986" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="21574:21868" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="21906:21968" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22005:22454" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22042:22336" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22374:22436" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22473:22922" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22510:22803" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="22841:22904" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552438966446" expanded="true" signature="22941:23346" ph="{...}" />
+              <marker date="1552438966446" expanded="true" signature="22978:23227" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552438966446" expanded="true" signature="23265:23328" ph="{&quot;score&quot;: 100.0...}" />
             </folding>
           </first_editor>
           <second_editor />
