@@ -317,8 +317,8 @@ A rule can either be a Decision or a Score.
 ### Test Cases
 |no_of_running_bl_pl|last_loan_drawn_in_months|no_of_bl_paid_off_successfully|value_of_bl_paid_successfully|Final Score|
 |:-----------:|:-------:|:-----------:|:-------:|:---------:|
-|8|2|0|0| -100*0.3 + -30*0.3 + 30*0.2 + 30*0.2 = -27|  
-|0|13|5|none| 100*0.3 + 100*0.3 + 100*0.2 + 100*0.2 = 100|
+|8|2|0|0| -27|  
+|0|13|5|none| 100|
 
 ### Rule Specification
 ```json
