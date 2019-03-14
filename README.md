@@ -270,7 +270,7 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
 }
 ```
 
-## A simple scoring rule
+## A scoring rule involving multiple parameters
 |Rule set Name|Weightage|
 |:-----------:|:-------:|
 |no_of_running_bl_pl|0.3|
@@ -593,5 +593,383 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
             ]
         }
     ]
+}
+```
+
+
+## A __chained__ score dependent on two other score rules
+
+### Banking Score, which is dependent on inward_cheque_bounces_in_6_months and performance_ratios
+```json
+{ 
+    "rule_name" : "banking_score", 
+    "rule_description" : "banking_score", 
+    "rule_type" : "score", 
+    "rule_set" : [
+        {
+            "set_ name" : "inward_cheque_bounces_in_6_months_score", 
+            "rule_name" : "inward_cheque_bounces_in_6_months", 
+            "weight" : 0.4, 
+            "rule_set_type" : "compute"
+        }, 
+        {
+            "set_name" : "performance_ratios_score", 
+            "rule_name" : "performance_ratios", 
+            "weight" : 0.6, 
+            "rule_set_type" : "compute"
+        }
+    ]
+}
+```
+
+### inward_cheque_bounces_in_6_months
+```json
+{ 
+    "rule_name" : "inward_cheque_bounces_in_6_months", 
+    "rule_description" : "inward_cheque_bounces_in_6_months_score", 
+    "rule_type" : "score", 
+    "rule_set" : [
+        {
+            "set_name" : "inward_cheque_bounces_in_6months", 
+            "weight" : 0.3, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_6months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 5.0
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_6months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 3.0
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_6months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 50.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_6months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<=", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_6months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "inward_cheque_bounces_in_3months", 
+            "weight" : 0.7, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_3months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 3.0
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_3months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 2.0
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_3months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_3months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "==", 
+                        "eval_value" : 0.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "inward_cheque_bounces_in_3months", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### performance_ratios
+
+```json
+{ 
+    "rule_name" : "performance_ratios", 
+    "rule_description" : "performance_ratios_score", 
+    "rule_type" : "score", 
+    "rule_set" : [
+        {
+            "set_name" : "txn_value_growth_qoq_cq_pq", 
+            "weight" : 0.4, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_qoq_cq_pq", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.5
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_qoq_cq_pq", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.8
+                    }, 
+                    "consequent" : {
+                        "score" : 35.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_qoq_cq_pq", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 70.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_qoq_cq_pq", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_qoq_cq_pq", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "txn_value_growth_mom_cm_pm", 
+            "weight" : 0.4, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_mom_cm_pm", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.5
+                    }, 
+                    "consequent" : {
+                        "score" : -100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_mom_cm_pm", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.8
+                    }, 
+                    "consequent" : {
+                        "score" : 35.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_mom_cm_pm", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 70.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_mom_cm_pm", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 1.0
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_growth_mom_cm_pm", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }
+            ]
+        }, 
+        {
+            "set_name" : "txn_value_variance_momin_momax", 
+            "weight" : 0.2, 
+            "rule_set_type" : "evaluate", 
+            "rule_rows" : [
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_variance_momin_momax", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.2
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_variance_momin_momax", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.4
+                    }, 
+                    "consequent" : {
+                        "score" : 30.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_variance_momin_momax", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "<", 
+                        "eval_value" : 0.6
+                    }, 
+                    "consequent" : {
+                        "score" : 60.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_variance_momin_momax", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : ">=", 
+                        "eval_value" : 0.6
+                    }, 
+                    "consequent" : {
+                        "score" : 100.0
+                    }
+                }, 
+                {
+                    "antecedent" : {
+                        "token_name" : "txn_value_variance_momin_momax", 
+                        "token_type" : "numeric", 
+                        "token_category" : "organic", 
+                        "operator" : "is_none"
+                    }, 
+                    "consequent" : {
+                        "score" : 0.0
+                    }
+                }
+            ]
+        }
 }
 ```
