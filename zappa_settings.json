@@ -1,0 +1,68 @@
+{
+  "development": {
+    "app_function": "wsgi_rule_engine.application",
+    "apigateway_description": "FundsCorner Rule Engine API",
+    "api_key_required": true,
+    "aws_region": "ap-south-1",
+    "profile_name": "default",
+    "project_name": "rule_engine",
+    "runtime": "python3.6",
+    "s3_bucket": "zappa-rule-engine-dev",
+    "environment_variables": {
+      "env": "dev"
+    },
+    "events": [
+      {
+        "function": "rule_engine.process_messages",
+        "event_source": {
+          "arn": "arn:aws:sqs:ap-south-1:259662926596:run_rule_engine_dev",
+          "batch_size": 1,
+          "enabled": true
+        }
+      }
+    ],
+    "extra_permissions": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "secretsmanager:*"
+        ],
+        "Resource": "*"
+      }
+    ]
+  },
+  "production": {
+    "app_function": "wsgi_rule_engine.application",
+    "apigateway_description": "FC Rule Engine API",
+    "api_key_required": true,
+    "aws_region": "ap-south-1",
+    "profile_name": "default",
+    "project_name": "rule_engine",
+    "runtime": "python3.6",
+    "s3_bucket": "zappa-rule-engine-prod",
+    "environment_variables": {
+      "env": "prod"
+    },
+    "events": [
+      {
+        "function": "rule_engine.process_messages",
+        "event_source": {
+          "arn": "arn:aws:sqs:ap-south-1:259662926596:run_rule_engine",
+          "batch_size": 1,
+          "enabled": true
+        }
+      }
+    ],
+    "extra_permissions": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "secretsmanager:*"
+        ],
+        "Resource": "*"
+      }
+    ],
+    "memory_size": 3000,
+    "timeout_seconds": 60
+  }
+}

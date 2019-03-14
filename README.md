@@ -13,7 +13,7 @@ modular, hierarchical rules.
 1. Clone or download the project into your local repository.
 2. Create a virtual environment with Python 3.6 or above and activate the same.
 ```python
-virtualenv .env -- python=Pyhton3.6
+virtualenv .env -- python=python3.6
 source .env/bin/activate
 ```
 3. To deploy this as a FaaS through Zappa, use [Zappa](https://www.zappa.io/), a framework for Serverless Python Web Services - Powered by AWS Lambda and API Gateway
@@ -22,7 +22,8 @@ zappa deploy {{your stage name}}
 ```
 4. To deploy this in a Kubernetes container, use [Fission](https://fission.io/), a framework for serverless functions on Kubernetes.
 ```python
-
+fission function create --name {{function name}} --env python --code {{python entrypoint file}}
+fission route create --method GET --url /hello --function {{function name}}  
 ```
 
 # Table of Contents
