@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/api_rules_engine.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auth/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auth/auth.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auth/authz_constants.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auth/aws_utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/auth/user.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/cognito_pkey.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/config.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/config/config.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/controllers/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/controllers/rule_engine_controller.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crypto_util/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/crypto_util/crypto.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/db_cache.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/db_utils.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/eligibilty_amount_compute_db_functions.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/database/rule_db_functions.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/service/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/service/response_util.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/service/rule_engine_service.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/service/rule_parser.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wsgi_rule_engine.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zappa_settings.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/functions.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/simple-serverless-rule-engine.iml" afterPath="$PROJECT_DIR$/.idea/simple-serverless-rule-engine.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/api_rules_engine.py" afterPath="$PROJECT_DIR$/api_rules_engine.py" />
+      <change beforePath="$PROJECT_DIR$/auth/__init__.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/auth/auth.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/auth/authz_constants.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/auth/aws_utils.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/auth/user.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/config/cognito_pkey.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/database/eligibilty_amount_compute_db_functions.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/database/rule_db_functions.py" afterPath="$PROJECT_DIR$/database/rule_db_functions.py" />
+      <change beforePath="$PROJECT_DIR$/service/rule_parser.py" afterPath="$PROJECT_DIR$/service/rule_parser.py" />
+      <change beforePath="$PROJECT_DIR$/zappa_settings.json" afterPath="$PROJECT_DIR$/zappa_settings.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="288">
+              <first_editor relative-caret-position="0">
                 <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
                 <folding>
                   <marker date="1552536020427" expanded="true" signature="6460:8332" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
@@ -252,6 +240,74 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="rule_engine_service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/rule_engine_service.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule_engine_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/rule_engine_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi_rule_engine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi_rule_engine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule_db_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/rule_db_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rule_parser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/rule_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="416" column="12" lean-forward="false" selection-start-line="416" selection-start-column="12" selection-end-line="416" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -265,8 +321,8 @@
       <file leaf-file-name="api_rules_engine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-887">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="553">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -274,7 +330,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="zappa_settings.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zappa_settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_config</find>
+      <find>cas_db</find>
+      <find>cas_rules_repository</find>
+      <find>max_</find>
+      <find>org_nae</find>
+      <find>org_name</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>rule_db</replace>
+      <replace>rules_repository</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -283,6 +366,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/database/rule_db_functions.py" />
+        <option value="$PROJECT_DIR$/service/rule_parser.py" />
+        <option value="$PROJECT_DIR$/functions.py" />
+        <option value="$PROJECT_DIR$/api_rules_engine.py" />
+        <option value="$PROJECT_DIR$/zappa_settings.json" />
       </list>
     </option>
   </component>
@@ -307,6 +395,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,16 +403,41 @@
               <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto_util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -359,15 +473,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
+    <frame x="52" y="23" width="1865" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -375,8 +490,8 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -394,6 +509,492 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/service/rule_engine_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <folding>
+              <marker date="1552536020427" expanded="true" signature="6460:8332" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="6604:8310" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="6713:8304" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="6727:8294" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="6760:8189" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="6796:8171" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="6822:7241" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7038:7160" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552536020427" expanded="true" signature="7268:7688" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7487:7608" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="7715:8149" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7938:8069" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="8223:8280" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9564:11943" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9692:11925" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9784:11921" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="9792:10926" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="9816:10856" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="9841:10846" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="9855:10060" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10074:10834" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10103:10820" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10121:10454" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10298:10394" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10472:10804" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10648:10744" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10880:10918" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10934:11915" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10958:11845" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10983:11835" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10997:11202" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11216:11513" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11377:11461" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="11527:11823" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11687:11771" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="11869:11907" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13538:23501" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13675:23499" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="13685:16087" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13834:16077" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="13852:14288" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="13889:14168" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="14206:14270" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="14307:14742" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="14344:14623" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="14661:14724" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552536020427" expanded="true" signature="14761:15195" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="14798:15077" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15115:15177" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="15214:15649" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="15251:15530" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15568:15631" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="15668:16063" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="15705:15944" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15982:16045" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="16098:18534" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="16253:18524" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="16271:16711" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="16308:16593" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="16631:16693" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="16730:17170" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="16767:17051" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="17089:17152" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="17189:17630" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="17226:17512" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="17550:17612" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552536020427" expanded="true" signature="17649:18090" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="17686:17971" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18009:18072" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="18109:18510" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="18146:18391" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18429:18492" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="18545:21009" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18705:20999" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="18723:19168" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="18760:19050" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="19088:19150" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="19187:19632" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="19224:19514" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="19552:19614" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="19651:20096" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="19688:19978" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20016:20078" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552536020427" expanded="true" signature="20115:20560" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="20152:20441" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20479:20542" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="20579:20985" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="20616:20866" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20904:20967" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="21020:23493" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="21179:23483" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="21197:21641" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="21234:21523" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="21561:21623" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="21660:22109" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="21697:21991" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22029:22091" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="22128:22577" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="22165:22459" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22497:22559" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552536020427" expanded="true" signature="22596:23045" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="22633:22926" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22964:23027" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="23064:23469" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="23101:23350" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="23388:23451" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="23673:24226" ph="{&quot;rule_name&quot;: &quot;banking_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="23800:24224" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="23810:24024" ph="{&quot;set_ name&quot;: &quot;inward_cheque_bounces_in_6_months_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24035:24218" ph="{&quot;set_name&quot;: &quot;performance_ratios_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24278:29436" ph="{&quot;rule_name&quot;: &quot;inward_cheque_bounces_in_6_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24451:29434" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="24461:26939" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24623:26929" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="24641:25090" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="24678:24970" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25008:25072" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="25109:25555" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="25146:25438" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25476:25537" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="25574:26021" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="25611:25903" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25941:26003" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26040:26488" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="26077:26369" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="26407:26470" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26507:26915" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="26544:26796" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="26834:26897" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26950:29428" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27112:29418" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="27130:27579" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="27167:27459" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27497:27561" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="27598:28044" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="27635:27927" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27965:28026" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28063:28510" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="28100:28392" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="28430:28492" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28529:28977" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="28566:28858" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="28896:28959" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28996:29404" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="29033:29285" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29323:29386" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="29474:36986" ph="{&quot;rule_name&quot;: &quot;performance_ratios&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29617:36986" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="29627:32065" ph="{&quot;set_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29783:32055" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="29801:30243" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="29838:30123" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="30161:30225" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="30262:30702" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="30299:30584" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="30622:30684" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="30721:31161" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="30758:31043" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31081:31143" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="31180:31622" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="31217:31503" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31541:31604" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="31641:32041" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="31678:31924" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31962:32023" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="32076:34514" ph="{&quot;set_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="32232:34504" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="32250:32692" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="32287:32572" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="32610:32674" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="32711:33151" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="32748:33033" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33071:33133" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="33170:33610" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="33207:33492" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33530:33592" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="33629:34071" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="33666:33952" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33990:34053" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="34090:34490" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="34127:34373" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="34411:34472" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="34525:36984" ph="{&quot;set_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="34685:36974" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="34703:35146" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="34740:35029" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35067:35128" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="35165:35609" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="35202:35491" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35529:35591" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="35628:36072" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="35665:35954" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35992:36054" ph="{&quot;score&quot;: 60.0...}" />
+              <marker date="1552536020427" expanded="true" signature="36091:36537" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="36128:36418" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="36456:36519" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="36556:36960" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="36593:36843" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="36881:36942" ph="{&quot;score&quot;: 0.0...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/rule_db_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1552536020427" expanded="true" signature="6460:8332" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="6604:8310" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="6713:8304" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="6727:8294" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="6760:8189" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="6796:8171" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="6822:7241" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7038:7160" ph="{&quot;low&quot;: 650...}" />
+              <marker date="1552536020427" expanded="true" signature="7268:7688" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7487:7608" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="7715:8149" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="7938:8069" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="8223:8280" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9564:11943" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9692:11925" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="9784:11921" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="9792:10926" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="9816:10856" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="9841:10846" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="9855:10060" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10074:10834" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10103:10820" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10121:10454" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10298:10394" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10472:10804" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10648:10744" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10880:10918" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="10934:11915" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10958:11845" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="10983:11835" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="10997:11202" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11216:11513" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11377:11461" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="11527:11823" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="11687:11771" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="11869:11907" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13538:23501" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13675:23499" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="13685:16087" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="13834:16077" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="13852:14288" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="13889:14168" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="14206:14270" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="14307:14742" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="14344:14623" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="14661:14724" ph="{&quot;score&quot;: -40.0...}" />
+              <marker date="1552536020427" expanded="true" signature="14761:15195" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="14798:15077" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15115:15177" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="15214:15649" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="15251:15530" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15568:15631" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="15668:16063" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="15705:15944" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="15982:16045" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="16098:18534" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="16253:18524" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="16271:16711" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="16308:16593" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="16631:16693" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="16730:17170" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="16767:17051" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="17089:17152" ph="{&quot;score&quot;: -30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="17189:17630" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="17226:17512" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="17550:17612" ph="{&quot;score&quot;: 40.0...}" />
+              <marker date="1552536020427" expanded="true" signature="17649:18090" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="17686:17971" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18009:18072" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="18109:18510" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="18146:18391" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18429:18492" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="18545:21009" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="18705:20999" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="18723:19168" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="18760:19050" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="19088:19150" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="19187:19632" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="19224:19514" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="19552:19614" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="19651:20096" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="19688:19978" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20016:20078" ph="{&quot;score&quot;: 85.0...}" />
+              <marker date="1552536020427" expanded="true" signature="20115:20560" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="20152:20441" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20479:20542" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="20579:20985" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="20616:20866" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="20904:20967" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="21020:23493" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="21179:23483" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="21197:21641" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="21234:21523" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="21561:21623" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="21660:22109" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="21697:21991" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22029:22091" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="22128:22577" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="22165:22459" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22497:22559" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552536020427" expanded="true" signature="22596:23045" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="22633:22926" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="22964:23027" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="23064:23469" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="23101:23350" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="23388:23451" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="23673:24226" ph="{&quot;rule_name&quot;: &quot;banking_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="23800:24224" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="23810:24024" ph="{&quot;set_ name&quot;: &quot;inward_cheque_bounces_in_6_months_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24035:24218" ph="{&quot;set_name&quot;: &quot;performance_ratios_score&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24278:29436" ph="{&quot;rule_name&quot;: &quot;inward_cheque_bounces_in_6_months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24451:29434" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="24461:26939" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="24623:26929" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="24641:25090" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="24678:24970" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25008:25072" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="25109:25555" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="25146:25438" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25476:25537" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="25574:26021" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="25611:25903" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="25941:26003" ph="{&quot;score&quot;: 50.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26040:26488" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="26077:26369" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="26407:26470" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26507:26915" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="26544:26796" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="26834:26897" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="26950:29428" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27112:29418" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="27130:27579" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="27167:27459" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27497:27561" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="27598:28044" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="27635:27927" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="27965:28026" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28063:28510" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="28100:28392" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="28430:28492" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28529:28977" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="28566:28858" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="28896:28959" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="28996:29404" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="29033:29285" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29323:29386" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="29474:36986" ph="{&quot;rule_name&quot;: &quot;performance_ratios&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29617:36986" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="29627:32065" ph="{&quot;set_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="29783:32055" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="29801:30243" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="29838:30123" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="30161:30225" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="30262:30702" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="30299:30584" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="30622:30684" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="30721:31161" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="30758:31043" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31081:31143" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="31180:31622" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="31217:31503" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31541:31604" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="31641:32041" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="31678:31924" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="31962:32023" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="32076:34514" ph="{&quot;set_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="32232:34504" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="32250:32692" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="32287:32572" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="32610:32674" ph="{&quot;score&quot;: -100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="32711:33151" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="32748:33033" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33071:33133" ph="{&quot;score&quot;: 35.0...}" />
+              <marker date="1552536020427" expanded="true" signature="33170:33610" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="33207:33492" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33530:33592" ph="{&quot;score&quot;: 70.0...}" />
+              <marker date="1552536020427" expanded="true" signature="33629:34071" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="33666:33952" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="33990:34053" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="34090:34490" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="34127:34373" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="34411:34472" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="34525:36984" ph="{&quot;set_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="34685:36974" ph="[...]" />
+              <marker date="1552536020427" expanded="true" signature="34703:35146" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="34740:35029" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35067:35128" ph="{&quot;score&quot;: 0.0...}" />
+              <marker date="1552536020427" expanded="true" signature="35165:35609" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="35202:35491" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35529:35591" ph="{&quot;score&quot;: 30.0...}" />
+              <marker date="1552536020427" expanded="true" signature="35628:36072" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="35665:35954" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="35992:36054" ph="{&quot;score&quot;: 60.0...}" />
+              <marker date="1552536020427" expanded="true" signature="36091:36537" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="36128:36418" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="36456:36519" ph="{&quot;score&quot;: 100.0...}" />
+              <marker date="1552536020427" expanded="true" signature="36556:36960" ph="{...}" />
+              <marker date="1552536020427" expanded="true" signature="36593:36843" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
+              <marker date="1552536020427" expanded="true" signature="36881:36942" ph="{&quot;score&quot;: 0.0...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1457,20 +2058,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-887">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
+          <first_editor relative-caret-position="0">
             <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             <folding>
               <marker date="1552536020427" expanded="true" signature="6460:8332" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
@@ -1675,6 +2266,96 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/rule_db_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/rule_engine_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/rule_engine_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="100" column="10" lean-forward="false" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/rule_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="416" column="12" lean-forward="false" selection-start-line="416" selection-start-column="12" selection-end-line="416" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi_rule_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zappa_settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

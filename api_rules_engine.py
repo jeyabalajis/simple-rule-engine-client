@@ -15,7 +15,7 @@ def say_hello(username="World"):
 
 
 header_text = '''
-    <html>\n<head> <title>Fundscorner Supply Chain Finance API</title> </head>\n<body>'''
+    <html>\n<head> <title>Simple Serverless Rule Engine</title> </head>\n<body>'''
 
 instructions = '''
     <p><em>Hint</em>: This is a RESTful web service! Append a username
@@ -27,7 +27,6 @@ footer_text = '</body>\n</html>'
 __logger = logging.getLogger(__name__)
 
 __logger.info("Loading environment........")
-# load_config(args.env)
 env_name = os.environ.get('env')
 
 if not env_name:
@@ -35,14 +34,9 @@ if not env_name:
 
 load_config(env_name)
 
-__logger.info("Acquiring application: " + str(datetime.datetime.utcnow()))
 application = Flask(__name__)
 
-__logger.info("Acquired application: " + str(datetime.datetime.utcnow()))
-
 application.debug = False
-
-__logger.info("adding application routes: " + str(datetime.datetime.utcnow()))
 
 # add a rule for the index page.
 application.add_url_rule(

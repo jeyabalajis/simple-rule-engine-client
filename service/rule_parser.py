@@ -1,17 +1,15 @@
-from database import rule_db_functions as rule_dao
 import logging
 import operator
-import json
+
+from config.config import get_config
+from database import rule_db_functions as rule_dao
 
 __logger = logging.getLogger(__name__)
 
-global __recursion_depth
 __recursion_depth = 0
 
-global __facts
 __facts = {}
 
-global __operator_mapping
 __operator_mapping = {
     "<=": operator.le,
     "<": operator.lt,
@@ -23,7 +21,6 @@ __operator_mapping = {
     "between": "between"
 }
 
-global __rule_results
 __rule_results = {}
 
 
@@ -65,8 +62,6 @@ def __evaluate_numeric(p_value, p_operator, target_value):
     else:
         try:
             operator_func = __get_func_for_operator(p_operator)
-            # __logger.info("core evaluation for: " + str(p_value) + p_operator + str(target_value))
-            # Jeyabalaji@11-Dec-2018 added between operator
             if operator_func == "between":
                 operator_func_gte = __get_func_for_operator(">=")
                 operator_func_lte = __get_func_for_operator("<=")
@@ -144,7 +139,7 @@ def __parse_and_execute_token(rule_antecedent, eval_parameter):
         return __evaluate_string(eval_parameter, rule_antecedent["operator"], rule_antecedent["eval_value"])
 
 
-def __evaluate_token(rule_antecedent, org_name):
+def __evaluate_token(rule_antecedent):
     """
 
     :param rule_antecedent:
@@ -163,8 +158,8 @@ def __evaluate_token(rule_antecedent, org_name):
             else:
                 return False
         if rule_antecedent["token_category"] == 'inorganic':
-            child_rule_lexicon = rule_dao.get_a_rule(rule_antecedent["child_rule_name"], org_name)
-            child_rule_score = __compute_score(child_rule_lexicon, org_name)
+            child_rule_lexicon = rule_dao.get_a_rule(rule_antecedent["child_rule_name"])
+            child_rule_score = __compute_score(child_rule_lexicon)
             token_result = __parse_and_execute_token(rule_antecedent, child_rule_score)
             rule_antecedent["token_result"] = token_result
             return token_result
@@ -172,7 +167,7 @@ def __evaluate_token(rule_antecedent, org_name):
         return False
 
 
-def __evaluate_rule_antecedent(rule_antecedent, condition, org_name):
+def __evaluate_rule_antecedent(rule_antecedent, condition):
     """
 
     :param rule_antecedent:
@@ -181,10 +176,13 @@ def __evaluate_rule_antecedent(rule_antecedent, condition, org_name):
     """
     global __recursion_depth
     __recursion_depth = __recursion_depth + 1
-    # __logger.info("recursion depth reached: " + str(__recursion_depth))
-    if __recursion_depth > 5:
-        # __logger.info("suicide alert!!")
-        # __logger.info("attention coder. your code is strangling itself to death. check")
+
+    _max_recursion_depth = get_config('max_recursion_depth')
+
+    if not __is_empty(_max_recursion_depth):
+        _max_recursion_depth = 5
+
+    if __recursion_depth > _max_recursion_depth:
         return False
 
     truth = True
@@ -196,9 +194,6 @@ def __evaluate_rule_antecedent(rule_antecedent, condition, org_name):
     if condition == "@when_all":
         truth = True
 
-    # __logger.info("INCOMING ANTECEDENT")
-    # __logger.info(json.dumps(rule_antecedent, indent=4, sort_keys=True, default=str))
-
     rule_antecedents = []
     if type(rule_antecedent).__name__ == 'dict':
         rule_antecedents.append(rule_antecedent)
@@ -208,12 +203,12 @@ def __evaluate_rule_antecedent(rule_antecedent, condition, org_name):
 
     for constituent in rule_antecedents:
         if "@when_all" in constituent:
-            constituent_result = __evaluate_rule_antecedent(constituent["@when_all"], "@when_all", org_name)
+            constituent_result = __evaluate_rule_antecedent(constituent["@when_all"], "@when_all")
         if "@when_any" in constituent:
-            constituent_result = __evaluate_rule_antecedent(constituent["@when_any"], "@when_any", org_name)
+            constituent_result = __evaluate_rule_antecedent(constituent["@when_any"], "@when_any")
         if "token_name" in constituent:
             # __logger.info("single token case. evaluate token")
-            constituent_result = __evaluate_token(constituent, org_name)
+            constituent_result = __evaluate_token(constituent)
 
         if condition == "@when_any":
             truth = truth or constituent_result
@@ -221,14 +216,10 @@ def __evaluate_rule_antecedent(rule_antecedent, condition, org_name):
         if condition == "@when_all":
             truth = truth and constituent_result
 
-        # # __logger.info("constituent result: " + str(constituent_result))
-        # __logger.info("truth===>: " + str(truth))
-
-    # __logger.info("Evaluation results for antecedent: " + str(truth))
     return truth
 
 
-def __evaluate_rule_set(rule_name, rule_set, parent, org_name):
+def __evaluate_rule_set(rule_name, rule_set, parent):
     """
 
     :param rule_name:
@@ -252,24 +243,18 @@ def __evaluate_rule_set(rule_name, rule_set, parent, org_name):
 
             rule_row_result = False
             if "antecedent" in rule_row:
-                rule_row_result = __evaluate_rule_antecedent(rule_row["antecedent"], "@when_all", org_name)
+                rule_row_result = __evaluate_rule_antecedent(rule_row["antecedent"], "@when_all")
 
             if rule_row_result:
-                # __logger.info("This rule row has evaluated as true!!! returning consequent")
                 unweighted_score = rule_row["consequent"]["score"]
                 rule_row["evaluated"] = True
                 rule_set_result["rule_rows"].append(rule_row)
                 break
             else:
-                # __logger.info("This rule row has evaluated as false :( continue evaluating the next row")
                 rule_row["evaluated"] = False
                 rule_set_result["rule_rows"].append(rule_row)
 
-        # __logger.info("DONE WITH ALL RULE ROWS for " + rule_set["set_name"])
-        # __logger.info("$$$ UNWEIGHTED SCORE@" + rule_set["set_name"] + " = " + str(unweighted_score))
-
         weighted_score = unweighted_score * rule_set["weight"]
-        # __logger.info("$$$   WEIGHTED SCORE@" + rule_set["set_name"] + " = " + str(weighted_score))
 
         rule_set_result["unweighted_score"] = unweighted_score
         rule_set_result["weighted_score"] = weighted_score
@@ -283,7 +268,7 @@ def __evaluate_rule_set(rule_name, rule_set, parent, org_name):
     return weighted_score
 
 
-def __evaluate_rule_decision_set(rule_name, rule_set, parent, org_name):
+def __evaluate_rule_decision_set(rule_name, rule_set, parent):
     """
 
     :param rule_name:
@@ -306,7 +291,7 @@ def __evaluate_rule_decision_set(rule_name, rule_set, parent, org_name):
 
             rule_row_result = False
             if "antecedent" in rule_row:
-                rule_row_result = __evaluate_rule_antecedent(rule_row["antecedent"], "@when_all", org_name)
+                rule_row_result = __evaluate_rule_antecedent(rule_row["antecedent"], "@when_all")
 
             if rule_row_result:
                 # __logger.info("This rule row has evaluated as true!!! returning consequent")
@@ -319,9 +304,6 @@ def __evaluate_rule_decision_set(rule_name, rule_set, parent, org_name):
                 rule_row["evaluated"] = False
                 rule_set_result["rule_rows"].append(rule_row)
 
-        # __logger.info("DONE WITH ALL RULE ROWS for " + rule_set["set_name"])
-        # __logger.info("$$$ DECISION@" + rule_set["set_name"] + " = " + str(decision))
-
         rule_set_result["decision"] = decision
 
         if parent:
@@ -333,7 +315,7 @@ def __evaluate_rule_decision_set(rule_name, rule_set, parent, org_name):
     return decision
 
 
-def __compute_score(rule_lexicon, parent, depth, org_name):
+def __compute_score(rule_lexicon, parent, depth):
     """
 
     :param rule_lexicon:
@@ -346,36 +328,27 @@ def __compute_score(rule_lexicon, parent, depth, org_name):
             unweighted_score = 0
             if "rule_set_type" in rule_set:
                 if rule_set["rule_set_type"] == 'evaluate':
-                    # __logger.info("evaluating rule set: " + rule_set["set_name"])
-
-                    score = __evaluate_rule_set(rule_lexicon["rule_name"], rule_set, parent, org_name)
-                    # __logger.info("rule set score for#" + rule_lexicon["rule_name"]
-                    #               + "#============>" + str(score))
+                    score = __evaluate_rule_set(rule_lexicon["rule_name"], rule_set, parent)
 
                 if rule_set["rule_set_type"] == 'compute':
-                    # __logger.info("computing child rule: " + rule_set["rule_name"])
-                    child_rule_lexicon = rule_dao.get_a_rule(rule_set["rule_name"], org_name)
+                    child_rule_lexicon = rule_dao.get_a_rule(rule_set["rule_name"])
                     if __is_empty(child_rule_lexicon):
-                        # __logger.info("rule lexicon not found!")
                         score = 0
                         unweighted_score = 0
                     else:
-                        unweighted_score = __compute_score(child_rule_lexicon, False, depth+1, org_name)
+                        unweighted_score = __compute_score(child_rule_lexicon, False, depth + 1)
                         score = unweighted_score * rule_set["weight"]
 
                     child_rule_result = dict(rule_name=child_rule_lexicon["rule_name"], weighted_score=score,
-                                             unweighted_score=unweighted_score, depth=depth+1)
+                                             unweighted_score=unweighted_score, depth=depth + 1)
 
                     __assign_child_rule_to_results(child_rule_result)
 
-                    # __logger.info("rule set score for#" + child_rule_lexicon["rule_name"]
-                    #               + "#============>" + str(score))
             total_score = total_score + score
-            # __logger.info("total score now ============>" + str(total_score))
     return total_score
 
 
-def __get_decision(rule_lexicon, parent, org_name):
+def __get_decision(rule_lexicon, parent):
     """
 
     :param rule_lexicon:
@@ -384,10 +357,7 @@ def __get_decision(rule_lexicon, parent, org_name):
     decision = 'none'
     if "rule_set" in rule_lexicon:
         rule_set = rule_lexicon["rule_set"]
-        # __logger.info("evaluating rule set: " + rule_set["set_name"])
-        decision = __evaluate_rule_decision_set(rule_lexicon["rule_name"], rule_set, parent, org_name)
-
-        # __logger.info("final decision now ============>" + str(decision))
+        decision = __evaluate_rule_decision_set(rule_lexicon["rule_name"], rule_set, parent)
 
     return decision
 
@@ -421,7 +391,6 @@ def __populate_rule_results(tag, value):
     """
     global __rule_results
     __rule_results[tag] = value
-    # __logger.info(json.dumps(__rule_results, indent=4, sort_keys=True, default=str))
 
 
 def __init_rule_results(rule_lexicon):
@@ -431,14 +400,18 @@ def __init_rule_results(rule_lexicon):
     :return:
     """
     global __rule_results
-    __rule_results = {"rule_name": rule_lexicon["rule_name"], "rule_description": rule_lexicon["rule_description"],
-                      "rule_type": rule_lexicon["rule_type"], "result_set": [], "child_rules": []}
+    __rule_results = {
+        "rule_name": rule_lexicon["rule_name"],
+        "rule_description": rule_lexicon["rule_description"],
+        "rule_type": rule_lexicon["rule_type"],
+        "result_set": [],
+        "child_rules": []
+    }
 
 
-def execute_rule(rule_name, p_facts, org_name=None):
+def execute_rule(rule_name, p_facts):
     """
 
-    :param org_name:
     :param p_facts:
     :param rule_name:
     :return:
@@ -447,42 +420,39 @@ def execute_rule(rule_name, p_facts, org_name=None):
     """
 
     if __is_empty(rule_name):
+        __logger.error("rule name is mandatory!")
         return False
-        # __logger.info("rule name is mandatory!")
 
     if __is_empty(p_facts):
+        __logger.error("facts are mandatory!")
         return False
-        # __logger.info("facts are mandatory!")
 
     global __facts
     __facts = p_facts
 
-    # __logger.info("rule name: " + rule_name)
-    # __logger.info(json.dumps(p_facts, indent=4, sort_keys=True, default=str))
-
-    rule_lexicon = rule_dao.get_a_rule(rule_name, org_name)
+    rule_lexicon = rule_dao.get_a_rule(rule_name)
 
     if __is_empty(rule_lexicon):
         return False
-        # __logger.info("rule lexicon not found!")
 
     if "rule_type" in rule_lexicon:
 
         __init_rule_results(rule_lexicon)
 
         if rule_lexicon["rule_type"] == "score":
-            # __logger.info("calling compute score function")
-            total_score = __compute_score(rule_lexicon, True, 0, org_name)
-            # __logger.info("$$$$$TOTAL SCORE$$$$$" + str(total_score))
+            __logger.info("calling compute score function")
+            total_score = __compute_score(rule_lexicon, True, 0)
+            __logger.info("$$$$$TOTAL SCORE$$$$$" + str(total_score))
             __populate_rule_results('final_score', total_score)
 
         if rule_lexicon["rule_type"] == "decision":
-            decision = __get_decision(rule_lexicon, True, org_name)
-            # __logger.info("$$$$$FINAL DECISION$$$$$" + str(decision))
+            __logger.info("calling get decision function")
+            decision = __get_decision(rule_lexicon, True)
+            __logger.info("$$$$$FINAL DECISION$$$$$" + str(decision))
             __populate_rule_results('final_decision', decision)
 
     else:
+        __logger.error("Rule type is not set for this rule")
         return False
-        # __logger.info("Rule type is not set for this rule")
 
     return __rule_results
