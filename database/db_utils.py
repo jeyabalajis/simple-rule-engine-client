@@ -1,12 +1,11 @@
-import urllib.parse
+import json
+import logging
+
+from pymongo import MongoClient
+
 from config.config import get_config
-from pymongo import MongoClient, ReturnDocument
-from crypto_util import crypto
-import logging
-from auth import user
-import time
-import logging
 from database import db_cache
+from secrets_manager import secrets_manager_service
 
 __logger = logging.getLogger(__name__)
 
@@ -33,13 +32,15 @@ def get_db_object(db_name) -> object:
     else:
         __logger.info("inside get_db_object with db name as: " + db_name)
 
-        db_uri = get_config('db_uri')
-        db_username = get_config('db_username')
-        db_pwd = get_config('db_password')
+        db_credentials_id = get_config("db_credentials_id")
+        db_secrets = secrets_manager_service.get_secret(db_credentials_id)
+        db_secrets = json.loads(db_secrets)
 
-        data_decrypt = crypto.decrypt(db_pwd)
+        db_uri = db_secrets["db_url"]
+        db_username = db_secrets["user_name"]
+        db_pwd = db_secrets["password"]
 
-        client = MongoClient(db_uri, username=db_username, password=data_decrypt)
+        client = MongoClient(db_uri, username=db_username, password=db_pwd)
 
         __db_name = get_config(db_name)
         db = client[__db_name]
@@ -58,33 +59,3 @@ def get_dict_from_cursor(p_cursor):
     if not __is_empty(p_cursor):
         r_dict = [doc for doc in p_cursor]
     return r_dict
-
-
-def enrich_audit_data_before_save(p_dict, p_method):
-    """
-    This function is to enrich the data to be posted with audit information
-    :param p_dict:
-    :return:
-    """
-    __logger.info("inside enrich_audit_data_before_save")
-    if not __is_empty(p_dict):
-        user_id = user.get_claims('email')
-        org_name = user.get_claims('custom:organizationName')
-        user_date_time_stamp = time.time()
-
-        __logger.info("Created By: " + user_id)
-        __logger.info("Created At: " + str(user_date_time_stamp))
-
-        if "POST" == p_method:
-            p_dict['created_by'] = user_id
-            p_dict["initiator"] = user_id
-            p_dict['created_at'] = user_date_time_stamp
-            p_dict['created_at_pretty'] = time.strftime('%c')
-            p_dict['org_name'] = org_name
-
-        if "PUT" == p_method:
-            p_dict['updated_by'] = user_id
-            p_dict['updated_at'] = user_date_time_stamp
-            p_dict['updated_at_pretty'] = time.strftime('%c')
-
-    return p_dict

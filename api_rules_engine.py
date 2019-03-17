@@ -30,7 +30,7 @@ __logger.info("Loading environment........")
 env_name = os.environ.get('env')
 
 if not env_name:
-    env_name = 'prod'
+    env_name = 'sandbox'
 
 load_config(env_name)
 
