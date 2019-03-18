@@ -1,7 +1,6 @@
 from service import rule_parser
 from functions import report
 
-
 def execute_rule_engine_service(rule_name, body):
     """
 
@@ -20,4 +19,4 @@ def execute_rule_engine_service(rule_name, body):
 
     _results = rule_parser.execute_rule(rule_name, _facts)
 
-    return report(0, _results)
+    return _results

@@ -1,6 +1,6 @@
 import logging
 import operator
-
+from functions import report
 from config.config import get_config
 from database import rule_db_functions as rule_dao
 
@@ -421,11 +421,11 @@ def execute_rule(rule_name, p_facts):
 
     if __is_empty(rule_name):
         __logger.error("rule name is mandatory!")
-        return False
+        return report(1, "Rule name is mandatory")
 
     if __is_empty(p_facts):
         __logger.error("facts are mandatory!")
-        return False
+        return report(1, "facts node is mandatory")
 
     global __facts
     __facts = p_facts
@@ -433,26 +433,31 @@ def execute_rule(rule_name, p_facts):
     rule_lexicon = rule_dao.get_a_rule(rule_name)
 
     if __is_empty(rule_lexicon):
-        return False
+        return report(1, "Rule does not exist")
 
     if "rule_type" in rule_lexicon:
 
-        __init_rule_results(rule_lexicon)
+        try:
+            __init_rule_results(rule_lexicon)
 
-        if rule_lexicon["rule_type"] == "score":
-            __logger.info("calling compute score function")
-            total_score = __compute_score(rule_lexicon, True, 0)
-            __logger.info("$$$$$TOTAL SCORE$$$$$" + str(total_score))
-            __populate_rule_results('final_score', total_score)
+            if rule_lexicon["rule_type"] == "score":
+                __logger.info("calling compute score function")
+                total_score = __compute_score(rule_lexicon, True, 0)
+                __logger.info("$$$$$TOTAL SCORE$$$$$" + str(total_score))
+                __populate_rule_results('final_score', total_score)
 
-        if rule_lexicon["rule_type"] == "decision":
-            __logger.info("calling get decision function")
-            decision = __get_decision(rule_lexicon, True)
-            __logger.info("$$$$$FINAL DECISION$$$$$" + str(decision))
-            __populate_rule_results('final_decision', decision)
+            if rule_lexicon["rule_type"] == "decision":
+                __logger.info("calling get decision function")
+                decision = __get_decision(rule_lexicon, True)
+                __logger.info("$$$$$FINAL DECISION$$$$$" + str(decision))
+                __populate_rule_results('final_decision', decision)
+        except:
+            import traceback
+            __logger.error(traceback.format_exc())
+            return report(1, traceback.format_exc())
 
     else:
         __logger.error("Rule type is not set for this rule")
-        return False
+        return report(1, "Rule Type is not configured for this rule")
 
-    return __rule_results
+    return report(0, __rule_results)
