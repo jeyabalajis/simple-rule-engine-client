@@ -1,9 +1,9 @@
 {
-  "rule_name": "eligibility_criteria",
-  "rule_description": "Eligibility Criteria",
+  "rule_name": "complex_eligibility_criteria",
+  "rule_description": "Complex Eligibility Criteria",
   "rule_type": "decision",
   "rule_set": {
-    "set_name": "eligibility_criteria",
+    "set_name": "complex_eligibility_criteria",
     "rule_set_type": "evaluate",
     "rule_rows": [
       {

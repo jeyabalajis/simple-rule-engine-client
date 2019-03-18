@@ -2,6 +2,7 @@ from service import rule_parser
 from functions import report
 from database import rule_db_functions
 
+
 def execute_rule_engine_service(rule_name, body):
     """
 
@@ -61,28 +62,33 @@ def __gather_facts(antecedent, facts):
     :param antecedent:
     :return:
     """
-    if "@when_all" in antecedent:
-        __gather_facts(antecedent["@when_all"], facts)
-    elif "@when_any" in antecedent:
-        __gather_facts(antecedent["@when_any"], facts)
-    else:
-        for _token in antecedent:
-            if _token["token_category"] in "organic":
-                if "@when_all" in antecedent:
-                    __gather_facts(antecedent["@when_all"], facts)
-                elif "@when_any" in antecedent:
-                    __gather_facts(antecedent["@when_any"], facts)
-                else:
-                    _fact = {}
-                    if "token_name" in _token:
-                        _fact["token_name"] = _token["token_name"]
+    rule_antecedents = []
+    if type(antecedent).__name__ == 'dict':
+        rule_antecedents.append(antecedent)
 
-                    if "token_type" in _token:
-                        _fact["token_type"] = _token["token_type"]
+    if type(antecedent).__name__ == 'list':
+        rule_antecedents = antecedent
+
+    for _antecedent in rule_antecedents:
+        if "@when_all" in _antecedent:
+            __gather_facts(_antecedent["@when_all"], facts)
+        elif "@when_any" in _antecedent:
+            __gather_facts(_antecedent["@when_any"], facts)
+        elif "token_name" in _antecedent:
+            if _antecedent["token_category"] in "organic":
+                _fact = {"token_name": _antecedent["token_name"]}
+
+                if "token_type" in _antecedent:
+                    _fact["token_type"] = _antecedent["token_type"]
+
+                if _fact not in facts:
                     facts.append(_fact)
             else:
-                _referred_rule_facts = __fetch_and_resolve_rule(_token["child_rule_name"])
-                facts.extend(_referred_rule_facts)
+                _referred_rule_facts = __fetch_and_resolve_rule(_antecedent["child_rule_name"])
+                if _referred_rule_facts:
+                    for _referred_rule_fact in _referred_rule_facts:
+                        if _referred_rule_fact not in _referred_rule_facts:
+                            facts.append(_referred_rule_fact)
 
 
 def find_rule(rule_name):
@@ -94,5 +100,3 @@ def find_rule(rule_name):
     facts = __fetch_and_resolve_rule(rule_name)
 
     return facts
-
-
