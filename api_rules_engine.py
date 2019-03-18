@@ -59,9 +59,14 @@ application.add_url_rule(
 
 
 @application.route('/api_rules_engine/v1/rules/<rule_name>/execute', methods=['POST'])
-def add_invoice_post(rule_name):
+def execute_rule_post(rule_name):
     body = request.get_json()
     return rule_engine_controller.execute_rule_engine(rule_name, body)
+
+
+@application.route('/api_rules_engine/v1/rules/<rule_name>', methods=['GET'])
+def get_rule_get(rule_name):
+    return rule_engine_controller.get_rule(rule_name)
 
 
 CORS(application)

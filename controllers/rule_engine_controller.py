@@ -3,6 +3,7 @@ import json
 from service import rule_engine_service
 from service import response_util
 
+
 __logger = logging.getLogger(__name__)
 
 
@@ -34,3 +35,15 @@ def execute_rule_engine(rule_name, body):
         __logger.error(traceback.format_exc())
         resp = response_util.get_response(500, "Error", traceback.format_exc())
         return resp
+
+
+def get_rule(rule_name):
+    """
+
+    :param rule_name:
+    :return:
+    """
+    data = rule_engine_service.find_rule(rule_name)
+    resp = response_util.get_response(200, "Success", data)
+
+    return resp
