@@ -10,7 +10,8 @@ def get_secret(secret_name):
     profile_name = get_config("profile_name")
 
     # Create a Secrets Manager client
-    session = boto3.session.Session(profile_name=profile_name)
+    # session = boto3.session.Session(profile_name=profile_name)
+    session = boto3.session.Session()
     client = session.client(
         service_name='secretsmanager',
         region_name=region_name
