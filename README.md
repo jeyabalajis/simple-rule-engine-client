@@ -30,6 +30,7 @@ fission route create --method GET --url /hello --function {{function name}}
 - [Why Rule Engine](#Why-Rule-Engine)
 - [Concepts](#Concepts)
 - [Examples](#Examples)
+- [API Specification](#API-Specification)
 
 # Why Rule Engine?
 Decision making has always been at the heart of any business. In certain industries (such as Lending), some of the decisions made are so dynamic & at a flux that programming these decisions by hand is counter-productive.
@@ -974,3 +975,37 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
         }
 }
 ```
+
+# API Specification
+
+## Get Rule Details
+
+1. This end point gets the facts required for a rule
+2. The same endpoint works for both Decision and Score rules.
+ 
+
+## Method
+
+__GET__
+
+## Input
+
+Specify rule name as part of the URL path
+
+## Output
+
+The facts required for the rule along with their type (numeric or string) are returned.
+
+## Execute a rule
+
+1. This end point executes a rule against the facts passed and produces rule engine output. 
+2. The same endpoint works for both Decision and Score rules.
+
+## Input
+
+The input is a json with a root node __"facts"__. Under "facts", specify the name of the fact followed by the value, as a key value pair.
+
+## Output
+
+1. The output produces a __final_decision__ if the rule is a Decision rule (or) a __final_score__ if the rule is a Score rule.
+2. The service also produces a detailed audit of which paths were evaluated as True during rule execution under the node __result_set__.
