@@ -20,7 +20,7 @@ modular, hierarchical rules.
 #### AWS
 1. Create a secret name prod/DBAuthentication with the following key value pairs to point to the rules database
 |Key Name|Value|
-|:-----------:|:-------:|
+|:------:|:---:|
 |db_url|URI of the MongoDB Database|
 |user_name|User name to login to the database|
 |password|Password to login to the database|
