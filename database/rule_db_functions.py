@@ -48,10 +48,12 @@ def get_all_rules():
 
     results = rules_repo_db.find(
         {
-
         },
         {
-            "_id": 0
+            "_id": 0,
+            "rule_name": 1,
+            "rule_type": 1,
+            "rule_description": 1
         }
     )
 

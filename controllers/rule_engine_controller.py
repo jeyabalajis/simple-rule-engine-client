@@ -47,3 +47,14 @@ def get_rule(rule_name):
     resp = response_util.get_response(200, "Success", data)
 
     return resp
+
+
+def get_all_rules():
+    """
+
+    :return:
+    """
+    data = rule_engine_service.find_all_rules()
+    resp = response_util.get_response(200, "Success", data)
+
+    return resp

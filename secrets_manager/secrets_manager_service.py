@@ -6,7 +6,7 @@ from config.config import get_config
 
 def get_secret(secret_name):
 
-    region_name = "ap-south-1"
+    region_name = get_config("region_name")
     profile_name = get_config("profile_name")
 
     # Create a Secrets Manager client

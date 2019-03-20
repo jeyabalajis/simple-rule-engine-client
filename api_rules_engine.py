@@ -69,6 +69,11 @@ def get_rule_get(rule_name):
     return rule_engine_controller.get_rule(rule_name)
 
 
+@application.route('/api_rules_engine/v1/rules', methods=['GET'])
+def get_all_rules_get():
+    return rule_engine_controller.get_all_rules()
+
+
 CORS(application)
 
 if __name__ == "__main__":

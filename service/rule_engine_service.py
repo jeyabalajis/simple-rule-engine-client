@@ -24,13 +24,12 @@ def execute_rule_engine_service(rule_name, body):
     return _results
 
 
-def __fetch_and_resolve_rule(rule_name):
+def __fetch_and_resolve_rule(rule_name, facts):
     """
 
     :param rule_name:
     :return:
     """
-    facts = []
     rule_template = rule_db_functions.get_a_rule(rule_name)
 
     if rule_template:
@@ -48,10 +47,14 @@ def __fetch_and_resolve_rule(rule_name):
             _rule_sets = rule_template["rule_set"]
 
             for _rule_set in _rule_sets:
-                if "rule_rows" in _rule_set:
-                    for _rule_row in _rule_set["rule_rows"]:
-                        _antecedent = _rule_row["antecedent"]
-                        __gather_facts(_antecedent, facts)
+                if _rule_set["rule_set_type"] == "evaluate":
+                    if "rule_rows" in _rule_set:
+                        for _rule_row in _rule_set["rule_rows"]:
+                            _antecedent = _rule_row["antecedent"]
+                            __gather_facts(_antecedent, facts)
+                elif _rule_set["rule_set_type"] == "compute":
+                    print("resolve child rule: " + _rule_set["rule_name"])
+                    __fetch_and_resolve_rule(_rule_set["rule_name"], facts)
 
     return facts
 
@@ -84,11 +87,7 @@ def __gather_facts(antecedent, facts):
                 if _fact not in facts:
                     facts.append(_fact)
             else:
-                _referred_rule_facts = __fetch_and_resolve_rule(_antecedent["child_rule_name"])
-                if _referred_rule_facts:
-                    for _referred_rule_fact in _referred_rule_facts:
-                        if _referred_rule_fact not in _referred_rule_facts:
-                            facts.append(_referred_rule_fact)
+                __fetch_and_resolve_rule(_antecedent["child_rule_name"], facts)
 
 
 def find_rule(rule_name):
@@ -97,6 +96,17 @@ def find_rule(rule_name):
     :param rule_name:
     :return:
     """
-    facts = __fetch_and_resolve_rule(rule_name)
+    facts = []
+    __fetch_and_resolve_rule(rule_name, facts)
 
     return facts
+
+
+def find_all_rules():
+    """
+
+    :return:
+    """
+    results = rule_db_functions.get_all_rules()
+
+    return results

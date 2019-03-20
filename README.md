@@ -10,6 +10,21 @@ modular, hierarchical rules.
 5. Written in Python 3.6 
 
 ## Installation Instructions
+
+### Pre-requisites
+
+#### Database
+1. The rule templates must be stored in a MongoDB schema. You can specify the schema name under config.ini against the key rule_db
+2. You can refer to the examples folder for some common examples of rule templates for both Score and Decision rules
+
+#### AWS
+1. Create a secret name prod/DBAuthentication with the following key value pairs to point to the rules database
+|Key Name|Value|
+|:-----------:|:-------:|
+|db_url|URI of the MongoDB Database|
+|user_name|User name to login to the database|
+|password|Password to login to the database|
+
 1. Clone or download the project into your local repository.
 2. Create a virtual environment with Python 3.6 or above and activate the same.
 ```python
@@ -978,34 +993,55 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
 
 # API Specification
 
+## Get all rules
+
+1. This end point gets all the rules that are part of the DB repository
+ 
+
+### Method
+
+__GET__
+
+### Input
+
+None
+
+### Output
+
+The rules stored in the DB repository are sent back. 
+Fields exposed:
+1. Rule name, 
+2. Rule description 
+3. Rule type (Score or Decision)  
+
 ## Get Rule Details
 
 1. This end point gets the facts required for a rule
 2. The same endpoint works for both Decision and Score rules.
  
 
-## Method
+### Method
 
 __GET__
 
-## Input
+### Input
 
 Specify rule name as part of the URL path
 
-## Output
+### Output
 
 The facts required for the rule along with their type (numeric or string) are returned.
 
-## Execute a rule
+### Execute a rule
 
 1. This end point executes a rule against the facts passed and produces rule engine output. 
 2. The same endpoint works for both Decision and Score rules.
 
-## Input
+### Input
 
 The input is a json with a root node __"facts"__. Under "facts", specify the name of the fact followed by the value, as a key value pair.
 
-## Output
+### Output
 
 1. The output produces a __final_decision__ if the rule is a Decision rule (or) a __final_score__ if the rule is a Score rule.
 2. The service also produces a detailed audit of which paths were evaluated as True during rule execution under the node __result_set__.
