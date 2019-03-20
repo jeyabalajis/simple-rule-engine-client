@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "d6a57b52-dcdf-42e7-b063-797d2496b738",
+		"name": "simple_serverless_rule_engine",
+		"description": "# Simple Serverless Rule Engine\n\nThis collection is composed of a set of endpoints that are exposed by __simple_serverless_rule_engine service__.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Execute a Rule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "fyiI0e3WE22VtSt0Lhx0e2cBb7R0vUhO4Zx3m4Wp"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"facts\": {\n\"no_of_running_bl_pl\": 3, \n\"last_loan_drawn_in_months\": 10, \n\"no_of_bl_paid_off_successfully\": 1, \n\"value_of_bl_paid_successfully\": 100000  \n}}"
+				},
+				"url": {
+					"raw": "https://teeajmjmpa.execute-api.ap-south-1.amazonaws.com/sandbox/api_rules_engine/v1/rules/bureau_score_loans/execute",
+					"protocol": "https",
+					"host": [
+						"teeajmjmpa",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"sandbox",
+						"api_rules_engine",
+						"v1",
+						"rules",
+						"bureau_score_loans",
+						"execute"
+					]
+				},
+				"description": "# Execute a rule\n\n1. This end point executes a rule against the facts passed and produces rule engine output. \n2. The same endpoint works for both Decision and Score rules.\n\n## Input\n\nThe input is a json with a root node __\"facts\"__. Under \"facts\", specify the name of the fact followed by the value, as a key value pair.\n\n## Output\n\nThe output produces a __final_decision__ if the rule is a Decision rule (or) a __final_score__ if the rule is a Score rule.\nThe service also produces a detailed audit of which paths were evaluated as True during rule execution under the node __result_set__."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rule details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "fyiI0e3WE22VtSt0Lhx0e2cBb7R0vUhO4Zx3m4Wp"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"facts\": {\"cibil_score\": 700, \"marital_status\": \"Married\", \"business_ownership\": \"Owned by Self\"}}"
+				},
+				"url": {
+					"raw": "https://teeajmjmpa.execute-api.ap-south-1.amazonaws.com/sandbox/api_rules_engine/v1/rules/performance_ratios",
+					"protocol": "https",
+					"host": [
+						"teeajmjmpa",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"sandbox",
+						"api_rules_engine",
+						"v1",
+						"rules",
+						"performance_ratios"
+					]
+				},
+				"description": "# Get a rule\n\n1. This end point gets the facts required for a rule\n2. The same endpoint works for both Decision and Score rules.\n \n\n## Method\n\n__GET__\n\n## Input\n\nSpecify rule name as part of the URL path\n\n## Output\n\nThe facts required for the rule are returned."
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Rules",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "fyiI0e3WE22VtSt0Lhx0e2cBb7R0vUhO4Zx3m4Wp"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"facts\": {\"cibil_score\": 700, \"marital_status\": \"Married\", \"business_ownership\": \"Owned by Self\"}}"
+				},
+				"url": {
+					"raw": "https://teeajmjmpa.execute-api.ap-south-1.amazonaws.com/sandbox/api_rules_engine/v1/rules",
+					"protocol": "https",
+					"host": [
+						"teeajmjmpa",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"sandbox",
+						"api_rules_engine",
+						"v1",
+						"rules"
+					]
+				},
+				"description": "# Get all rules\n\n1. This end point gets all the rules that are part of the DB repository\n \n\n## Method\n\n__GET__\n\n## Input\n\nNone\n\n## Output\n\nThe rules stored in the DB repository are sent back. \nFields exposed:\n1. Rule name, \n2. Rule description \n3. Rule type (Score or Decision)  "
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "51402bb0-f673-4df5-b8c1-b5d6024a3d93",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3f3d9d04-6e6f-4bb1-8054-5a0e7cf3734c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
