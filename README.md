@@ -6,8 +6,15 @@ A __lightweight__ yet __powerful__ rule engine that allows declarative specifica
 2. Ability to __version control__ rule declarations thus enabling auditing of rule changes over a period of time.
 3. Ability to author **_chained rules_**. Evaluation of one rule can refer to the result of another rule, thus enabling 
 modular, hierarchical rules. 
-4. The rule engine is __state-less__ and __server less__ - perfect for hosting it as an independent micro-service.
-5. Written in Python 3.6 
+4. The rule engine is __server less__! - perfect for hosting it as an independent micro-service.
+5. The consumer of the rules services __will not__ know about the rule details. The consumer just invokes the service and get the rule results. This enables a clean segregation between rule owners & rule consumers.
+6. Written in Python 3.6 with minimal requirements
+
+## Demo
+
+1. Clone or download the project into your local repository.
+2. Import the postman collection stored under examples folder into Postman
+3. Try out the service!  
 
 ## Installation Instructions
 
@@ -32,7 +39,7 @@ modular, hierarchical rules.
 virtualenv .env -- python=python3.6
 source .env/bin/activate
 ```
-3. To deploy this as a FaaS through Zappa, use [Zappa](https://www.zappa.io/), a framework for Serverless Python Web Services - Powered by AWS Lambda and API Gateway
+3. To deploy this as a FaaS through [AWS Lambda](https://aws.amazon.com/lambda/), use [Zappa](https://www.zappa.io/), a framework for Serverless Python Web Services - Powered by AWS Lambda and API Gateway
 ```python
 zappa deploy {{your stage name}}
 ```
