@@ -989,6 +989,7 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
                 }
             ]
         }
+    ]
 }
 ```
 
