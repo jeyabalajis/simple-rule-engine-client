@@ -36,7 +36,7 @@ source .env/bin/activate
 ```python
 zappa deploy {{your stage name}}
 ```
-4. To deploy this in a Kubernetes container, use [Fission](https://fission.io/), a framework for serverless functions on Kubernetes.
+4. To deploy this as a container in a Kubernetes cluster, use [Fission](https://fission.io/), a framework for serverless functions on Kubernetes.
 ```python
 fission function create --name {{function name}} --env python --code {{python entrypoint file}}
 fission route create --method GET --url /hello --function {{function name}}  
