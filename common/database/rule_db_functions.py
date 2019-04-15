@@ -1,11 +1,6 @@
 import logging
-from datetime import datetime
-from datetime import timedelta
 
-import pymongo
-from dateutil.parser import parse
-
-from database import db_utils
+from common.database import db_utils
 
 __logger = logging.getLogger(__name__)
 

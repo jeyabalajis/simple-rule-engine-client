@@ -1,8 +1,7 @@
 import logging
 import json
-from service import rule_engine_service
-from service import response_util
-
+from parser.service import rule_engine_service
+from parser.service import response_util
 
 __logger = logging.getLogger(__name__)
 

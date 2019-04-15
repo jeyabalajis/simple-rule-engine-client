@@ -15,7 +15,7 @@ gunicorn==19.9.0
 hjson==3.0.1
 idna==2.8
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2>=2.10.1
 jmespath==0.9.3
 MarkupSafe==1.1.1
 placebo==0.9.0

@@ -1,7 +1,7 @@
 import base64
 import boto3
 from botocore.exceptions import ClientError
-from config.config import get_config
+from common.configure import get_config
 
 
 def get_secret(secret_name):

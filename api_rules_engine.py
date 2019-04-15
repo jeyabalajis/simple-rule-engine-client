@@ -1,12 +1,11 @@
-import datetime
 import logging
 import os
 
 from flask import Flask, request
 from flask_cors import CORS
 
-from config.config import load_config
-from controllers import rule_engine_controller
+from common.configure.config import load_config
+from api.controllers import rule_engine_controller
 
 
 # print a nice greeting.

@@ -24,11 +24,11 @@ def load_config(environment) -> object:
     :return:
     """
     __logger = logging.getLogger(__name__)
-    __logger.info("inside load config")
+    __logger.info("inside load configure")
 
     try:
         cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
-        path = cwd + "/" + "config.ini"
+        path = cwd + "/" + "configure.ini"
 
         print("Log configuration file:" + path)
         global __config

@@ -1,6 +1,6 @@
-from service import rule_parser
-from functions import report
-from database import rule_db_functions
+from parser.service import rule_parser
+from common.functions import report
+from common.database import rule_db_functions
 
 
 def execute_rule_engine_service(rule_name, body):

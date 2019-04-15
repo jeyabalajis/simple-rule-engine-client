@@ -3,9 +3,9 @@ import logging
 
 from pymongo import MongoClient
 
-from config.config import get_config
-from database import db_cache
-from secrets_manager import secrets_manager_service
+from common.configure import get_config
+from common.database import db_cache
+from common.secrets_manager import secrets_manager_service
 
 __logger = logging.getLogger(__name__)
 
@@ -15,6 +15,15 @@ def __is_empty(any_structure):
         return False
     else:
         return True
+
+
+def init_rule_db(db):
+    """
+
+    :param db:
+    :return:
+    """
+    db_cache.set_db_cache("rule_db", db)
 
 
 def get_db_object(db_name) -> object:

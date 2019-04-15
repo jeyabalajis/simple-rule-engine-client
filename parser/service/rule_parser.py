@@ -1,8 +1,9 @@
 import logging
 import operator
-from functions import report
-from config.config import get_config
-from database import rule_db_functions as rule_dao
+from common.functions import report
+from common.configure import get_config
+from common.database import rule_db_functions as rule_dao
+from common.database.db_utils import init_rule_db
 
 __logger = logging.getLogger(__name__)
 
@@ -409,9 +410,10 @@ def __init_rule_results(rule_lexicon):
     }
 
 
-def execute_rule(rule_name, p_facts):
+def execute_rule(db, rule_name, p_facts):
     """
 
+    :param db:
     :param p_facts:
     :param rule_name:
     :return:
@@ -426,6 +428,12 @@ def execute_rule(rule_name, p_facts):
     if __is_empty(p_facts):
         __logger.error("facts are mandatory!")
         return report(1, "facts node is mandatory")
+
+    if __is_empty(db):
+        __logger.error("db handle mandatory!")
+        return report(1, "database handle is mandatory")
+
+    init_rule_db(db)
 
     global __facts
     __facts = p_facts
