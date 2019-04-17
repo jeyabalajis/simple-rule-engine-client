@@ -3,10 +3,8 @@ import os
 import inspect
 import logging
 
-
-global __config
 __config = configparser.ConfigParser()
-global __env
+
 __env = 'unknown'
 
 
@@ -28,14 +26,15 @@ def load_config(environment) -> object:
 
     try:
         cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
-        path = cwd + "/" + "configure.ini"
+        # print("cwd: " + cwd)
+        path = cwd + "/" + "config.ini"
 
-        print("Log configuration file:" + path)
         global __config
         __config.read(path, encoding='utf-8')
 
         global __env
         __env = environment
+        # print("env set as: " + __env)
     except:
         import traceback
         __logger.error("UNABLE TO READ CONFIGURATION!!!!!!!!!!!!")
@@ -48,6 +47,8 @@ def get_config(key):
     :param key:
     :return:
     """
+    global __env
+    global __config
     __logger = logging.getLogger(__name__)
 
     __logger.info("inside get_config get " + key + " for env " + __env)

@@ -1,7 +1,8 @@
 import base64
 import boto3
 from botocore.exceptions import ClientError
-from common.configure import get_config
+from common.configure.config import get_config
+import os
 
 
 def get_secret(secret_name):
@@ -9,9 +10,13 @@ def get_secret(secret_name):
     region_name = get_config("region_name")
     profile_name = get_config("profile_name")
 
-    # Create a Secrets Manager client
-    # session = boto3.session.Session(profile_name=profile_name)
-    session = boto3.session.Session()
+    # Create a Secrets Manager client. For local executions, use a specific named aws configuration profile
+    # When executed through Lambda, use default profile
+    if 'FRAMEWORK' in os.environ and os.environ['FRAMEWORK'] == 'Zappa':
+        session = boto3.session.Session()
+    else:
+        session = boto3.session.Session(profile_name=profile_name)
+
     client = session.client(
         service_name='secretsmanager',
         region_name=region_name

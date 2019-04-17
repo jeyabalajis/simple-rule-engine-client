@@ -1,7 +1,7 @@
 import logging
 import operator
 from common.functions import report
-from common.configure import get_config
+from common.configure.config import get_config
 from common.database import rule_db_functions as rule_dao
 from common.database.db_utils import init_rule_db
 

@@ -3,7 +3,7 @@ import logging
 
 from pymongo import MongoClient
 
-from common.configure import get_config
+from common.configure.config import get_config
 from common.database import db_cache
 from common.secrets_manager import secrets_manager_service
 

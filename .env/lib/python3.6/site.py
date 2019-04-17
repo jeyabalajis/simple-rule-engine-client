@@ -691,7 +691,7 @@ def enablerlcompleter():
         except ImportError:
             return
 
-        # Reading the initialization (configure) file may not be enough to set a
+        # Reading the initialization (config) file may not be enough to set a
         # completion key, so we set one first and then read the file.
         readline_doc = getattr(readline, "__doc__", "")
         if readline_doc is not None and "libedit" in readline_doc:

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.env/bin/python-config" afterPath="$PROJECT_DIR$/.env/bin/python-config" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip-19.0.3.dist-info/RECORD" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip-19.0.3.dist-info/RECORD" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/cli/cmdoptions.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/cli/cmdoptions.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/cli/parser.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/cli/parser.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/commands/configuration.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_internal/commands/configuration.py" />
@@ -15,7 +16,20 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/appdirs.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/appdirs.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pip/_vendor/requests/adapters.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/__init__.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/__init__.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/_vendor/appdirs.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/pkg_resources/_vendor/pyparsing.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/INSTALLER" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/METADATA" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/RECORD" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/WHEEL" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/dependency_links.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/entry_points.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/top_level.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools-40.8.0.dist-info/zip-safe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/_vendor/pyparsing.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/_vendor/pyparsing.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/build_meta.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/build_meta.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/alias.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/alias.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/easy_install.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/easy_install.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/saveopts.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/command/saveopts.py" />
@@ -24,30 +38,17 @@
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/dist.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/dist.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/package_index.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/package_index.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/pep425tags.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/pep425tags.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/unicode_utils.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/setuptools/unicode_utils.py" />
+      <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/wheel-0.33.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/wheel-0.33.1.dist-info/RECORD" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/wheel/pep425tags.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site-packages/wheel/pep425tags.py" />
       <change beforePath="$PROJECT_DIR$/.env/lib/python3.6/site.py" afterPath="$PROJECT_DIR$/.env/lib/python3.6/site.py" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/simple-serverless-rule-engine.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/simple-rule-engine.iml" afterPath="$PROJECT_DIR$/.idea/simple-rule-engine.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api_rules_engine.py" afterPath="$PROJECT_DIR$/api_rules_engine.py" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/config.ini" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controllers/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/controllers/rule_engine_controller.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database/db_cache.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database/db_utils.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/database/rule_db_functions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/functions.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change beforePath="$PROJECT_DIR$/secrets_manager/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/secrets_manager/secrets_manager_service.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/service/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/service/response_util.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/service/rule_engine_service.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/service/rule_parser.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/common/configure/config.py" afterPath="$PROJECT_DIR$/common/configure/config.py" />
+      <change beforePath="$PROJECT_DIR$/common/database/db_utils.py" afterPath="$PROJECT_DIR$/common/database/db_utils.py" />
+      <change beforePath="$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py" afterPath="$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py" />
+      <change beforePath="$PROJECT_DIR$/parser/service/rule_parser.py" afterPath="$PROJECT_DIR$/parser/service/rule_parser.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,58 +59,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rule_engine_service.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/service/rule_engine_service.py">
+      <file leaf-file-name="config.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/configure/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rule_parser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/service/rule_parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7380">
-              <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api_rules_engine.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -117,29 +74,23 @@
       <file leaf-file-name="db_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/database/db_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="294">
+              <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="secrets_manager_service.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rule_db_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="162">
+              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,6 +116,7 @@
       <find>ap-south-1</find>
       <find>fundscorner</find>
       <find>jeyabalaji</find>
+      <find>common.configure</find>
     </findStrings>
     <replaceStrings>
       <replace>rule_db</replace>
@@ -200,11 +152,14 @@
         <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/database/db_utils.py" />
         <option value="$PROJECT_DIR$/parser/__init__.py" />
-        <option value="$PROJECT_DIR$/parser/service/rule_parser.py" />
         <option value="$PROJECT_DIR$/api_rules_engine.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/parser/service/rule_parser.py" />
+        <option value="$PROJECT_DIR$/common/database/db_utils.py" />
+        <option value="$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py" />
+        <option value="$PROJECT_DIR$/common/configure/config.py" />
       </list>
     </option>
   </component>
@@ -230,24 +185,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="simple-rule-engine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="configure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="secrets_manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-serverless-rule-engine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-serverless-rule-engine" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -437,12 +431,13 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6879581" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41780105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14619565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -451,7 +446,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -492,13 +486,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/controllers/rule_engine_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/service/rule_parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2808">
@@ -506,13 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py" />
     <entry file="file://$PROJECT_DIR$/parser/service/rule_engine_service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -520,27 +501,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/configure/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/db_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zappa_settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/configure/config.ini" />
+    <entry file="file://$PROJECT_DIR$/common/database/db_utils.py" />
+    <entry file="file://$PROJECT_DIR$/zappa_settings.json" />
     <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -551,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py" />
     <entry file="file://$PROJECT_DIR$/parser/service/rule_engine_service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -565,30 +522,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="288">
-            <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/common/functions.py" />
+    <entry file="file://$PROJECT_DIR$/common/database/__init__.py" />
     <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -599,30 +535,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py" />
+    <entry file="file://$PROJECT_DIR$/common/database/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,420 +548,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/common/database/__init__.py" />
     <entry file="file://$PROJECT_DIR$/auth/auth.py" />
     <entry file="file://$PROJECT_DIR$/auth/user.py" />
     <entry file="file://$PROJECT_DIR$/crypto_util/crypto.py" />
-    <entry file="file://$PROJECT_DIR$/examples/simple_decision.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/complex_decision.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1332">
-          <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple_score.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/controllers/rule_engine_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/configure/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple_serverless_rule_engine.postman_collection.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zappa_settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wsgi_rule_engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker_build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker_run.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="18">
-            <caret line="32" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-            <folding>
-              <marker date="1553084168378" expanded="true" signature="7518:9390" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="7662:9368" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="7771:9362" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="7785:9352" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="7818:9247" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="7854:9229" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="7880:8299" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="8096:8218" ph="{&quot;low&quot;: 650...}" />
-              <marker date="1553084168378" expanded="true" signature="8326:8746" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="8545:8666" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="8773:9207" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="8996:9127" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="9281:9338" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="10622:13001" ph="{&quot;rule_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="10750:12983" ph="{&quot;set_name&quot;: &quot;eligibility_criteria&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="10842:12979" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="10850:11984" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="10874:11914" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="10899:11904" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="10913:11118" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="11132:11892" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="11161:11878" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="11179:11512" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="11356:11452" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="11530:11862" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="11706:11802" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="11938:11976" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="11992:12973" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="12016:12903" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="12041:12893" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="12055:12260" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="12274:12571" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="12435:12519" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="12585:12881" ph="{&quot;token_category&quot;: &quot;organic&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="12745:12829" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="12927:12965" ph="{&quot;decision&quot;: &quot;GO&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="14596:24559" ph="{&quot;rule_name&quot;: &quot;bureau_score_loans&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="14733:24557" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="14743:17145" ph="{&quot;set_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="14892:17135" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="14910:15346" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="14947:15226" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="15264:15328" ph="{&quot;score&quot;: -100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="15365:15800" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="15402:15681" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="15719:15782" ph="{&quot;score&quot;: -40.0...}" />
-              <marker date="1553084168378" expanded="true" signature="15819:16253" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="15856:16135" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="16173:16235" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="16272:16707" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="16309:16588" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="16626:16689" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="16726:17121" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="16763:17002" ph="{&quot;token_name&quot;: &quot;no_of_running_bl_pl&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="17040:17103" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="17156:19592" ph="{&quot;set_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="17311:19582" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="17329:17769" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="17366:17651" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="17689:17751" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="17788:18228" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="17825:18109" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="18147:18210" ph="{&quot;score&quot;: -30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="18247:18688" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="18284:18570" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="18608:18670" ph="{&quot;score&quot;: 40.0...}" />
-              <marker date="1553084168378" expanded="true" signature="18707:19148" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="18744:19029" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="19067:19130" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="19167:19568" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="19204:19449" ph="{&quot;token_name&quot;: &quot;last_loan_drawn_in_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="19487:19550" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="19603:22067" ph="{&quot;set_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="19763:22057" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="19781:20226" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="19818:20108" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="20146:20208" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="20245:20690" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="20282:20572" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="20610:20672" ph="{&quot;score&quot;: 70.0...}" />
-              <marker date="1553084168378" expanded="true" signature="20709:21154" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="20746:21036" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="21074:21136" ph="{&quot;score&quot;: 85.0...}" />
-              <marker date="1553084168378" expanded="true" signature="21173:21618" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="21210:21499" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="21537:21600" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="21637:22043" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="21674:21924" ph="{&quot;token_name&quot;: &quot;no_of_bl_paid_off_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="21962:22025" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="22078:24551" ph="{&quot;set_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="22237:24541" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="22255:22699" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="22292:22581" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="22619:22681" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="22718:23167" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="22755:23049" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="23087:23149" ph="{&quot;score&quot;: 35.0...}" />
-              <marker date="1553084168378" expanded="true" signature="23186:23635" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="23223:23517" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="23555:23617" ph="{&quot;score&quot;: 50.0...}" />
-              <marker date="1553084168378" expanded="true" signature="23654:24103" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="23691:23984" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="24022:24085" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="24122:24527" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="24159:24408" ph="{&quot;token_name&quot;: &quot;value_of_bl_paid_successfully&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="24446:24509" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="24731:25284" ph="{&quot;rule_name&quot;: &quot;banking_score&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="24858:25282" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="24868:25082" ph="{&quot;set_ name&quot;: &quot;inward_cheque_bounces_in_6_months_score&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="25093:25276" ph="{&quot;set_name&quot;: &quot;performance_ratios_score&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="25336:30494" ph="{&quot;rule_name&quot;: &quot;inward_cheque_bounces_in_6_months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="25509:30492" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="25519:27997" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="25681:27987" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="25699:26148" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="25736:26028" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="26066:26130" ph="{&quot;score&quot;: -100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="26167:26613" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="26204:26496" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="26534:26595" ph="{&quot;score&quot;: 0.0...}" />
-              <marker date="1553084168378" expanded="true" signature="26632:27079" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="26669:26961" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="26999:27061" ph="{&quot;score&quot;: 50.0...}" />
-              <marker date="1553084168378" expanded="true" signature="27098:27546" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="27135:27427" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="27465:27528" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="27565:27973" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="27602:27854" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_6months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="27892:27955" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="28008:30486" ph="{&quot;set_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="28170:30476" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="28188:28637" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="28225:28517" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="28555:28619" ph="{&quot;score&quot;: -100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="28656:29102" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="28693:28985" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="29023:29084" ph="{&quot;score&quot;: 0.0...}" />
-              <marker date="1553084168378" expanded="true" signature="29121:29568" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="29158:29450" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="29488:29550" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="29587:30035" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="29624:29916" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="29954:30017" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="30054:30462" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="30091:30343" ph="{&quot;token_name&quot;: &quot;inward_cheque_bounces_in_3months&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="30381:30444" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="30532:38050" ph="{&quot;rule_name&quot;: &quot;performance_ratios&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="30675:38048" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="30685:33123" ph="{&quot;set_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="30841:33113" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="30859:31301" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="30896:31181" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="31219:31283" ph="{&quot;score&quot;: -100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="31320:31760" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="31357:31642" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="31680:31742" ph="{&quot;score&quot;: 35.0...}" />
-              <marker date="1553084168378" expanded="true" signature="31779:32219" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="31816:32101" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="32139:32201" ph="{&quot;score&quot;: 70.0...}" />
-              <marker date="1553084168378" expanded="true" signature="32238:32680" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="32275:32561" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="32599:32662" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="32699:33099" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="32736:32982" ph="{&quot;token_name&quot;: &quot;txn_value_growth_qoq_cq_pq&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="33020:33081" ph="{&quot;score&quot;: 0.0...}" />
-              <marker date="1553084168378" expanded="true" signature="33134:35572" ph="{&quot;set_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="33290:35562" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="33308:33750" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="33345:33630" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="33668:33732" ph="{&quot;score&quot;: -100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="33769:34209" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="33806:34091" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="34129:34191" ph="{&quot;score&quot;: 35.0...}" />
-              <marker date="1553084168378" expanded="true" signature="34228:34668" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="34265:34550" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="34588:34650" ph="{&quot;score&quot;: 70.0...}" />
-              <marker date="1553084168378" expanded="true" signature="34687:35129" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="34724:35010" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="35048:35111" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="35148:35548" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="35185:35431" ph="{&quot;token_name&quot;: &quot;txn_value_growth_mom_cm_pm&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="35469:35530" ph="{&quot;score&quot;: 0.0...}" />
-              <marker date="1553084168378" expanded="true" signature="35583:38042" ph="{&quot;set_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="35743:38032" ph="[...]" />
-              <marker date="1553084168378" expanded="true" signature="35761:36204" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="35798:36087" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="36125:36186" ph="{&quot;score&quot;: 0.0...}" />
-              <marker date="1553084168378" expanded="true" signature="36223:36667" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="36260:36549" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="36587:36649" ph="{&quot;score&quot;: 30.0...}" />
-              <marker date="1553084168378" expanded="true" signature="36686:37130" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="36723:37012" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="37050:37112" ph="{&quot;score&quot;: 60.0...}" />
-              <marker date="1553084168378" expanded="true" signature="37149:37595" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="37186:37476" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="37514:37577" ph="{&quot;score&quot;: 100.0...}" />
-              <marker date="1553084168378" expanded="true" signature="37614:38018" ph="{...}" />
-              <marker date="1553084168378" expanded="true" signature="37651:37901" ph="{&quot;token_name&quot;: &quot;txn_value_variance_momin_momax&quot;...}" />
-              <marker date="1553084168378" expanded="true" signature="37939:38000" ph="{&quot;score&quot;: 0.0...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/complex_decision.json" />
+    <entry file="file://$PROJECT_DIR$/examples/simple_score.json" />
+    <entry file="file://$PROJECT_DIR$/examples/simple_serverless_rule_engine.postman_collection.json" />
+    <entry file="file://$PROJECT_DIR$/wsgi_rule_engine.py" />
+    <entry file="file://$PROJECT_DIR$/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/docker_build.sh" />
+    <entry file="file://$PROJECT_DIR$/docker_run.sh" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/parser/service/rule_engine_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/database/db_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/common/functions.py" />
     <entry file="file://$PROJECT_DIR$/parser/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/service/rule_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7380">
-          <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,18 +583,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/setup.py" />
+    <entry file="file://$PROJECT_DIR$/parser/service/rule_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="54">
+          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/examples/simple_decision.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="18">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api_rules_engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="67" column="37" lean-forward="false" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/controllers/rule_engine_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="44" column="34" lean-forward="false" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/service/rule_engine_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database/rule_db_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zappa_settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/configure/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/database/db_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/secrets_manager/secrets_manager_service.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/configure/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
