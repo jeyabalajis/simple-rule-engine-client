@@ -87,7 +87,8 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
 - A rule set is composed of one or many rule rows. 
 - You can ‘roughly’ think of each Rule Row as a Conditional evaluation of the facts (a.k.a antecedent) & a score based on these conditions (a.k.a consequent).
  
-[Score Rule Concept](https://photos.app.goo.gl/584J4aZCsLEHHT6aA "Score Rule")
+![Score Rule Concept](/images/score_rule.png)
+
 
 ## Decision rule:
 - A Decision rule is always composed of only one rule set.
@@ -96,7 +97,8 @@ The simple-serverless-rule-engine allows the rules to be _“chained”_. I.e. y
 - A decision rule always arrives at a single decision at the end of parsing.
 - The decision can be anything (a numeric, a string such as YES/NO or even a JSON)
 
-[Decision Rule Concept](https://photos.app.goo.gl/RxisVyVJ1tTqBCmP9 "Decision Rule")
+![Decision Rule Concept](/images/decision_rule.png)
+
 
 ## Antecedent and Consequent
 

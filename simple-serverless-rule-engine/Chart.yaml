@@ -1,0 +1,5 @@
+apiVersion: v1
+appVersion: "1.0"
+description: A Helm chart for deploying simple-serverless-rule-engine onto Kubernetes
+name: simple-serverless-rule-engine
+version: 0.1.0
