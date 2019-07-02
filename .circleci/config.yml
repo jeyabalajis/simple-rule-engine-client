@@ -1,0 +1,13 @@
+version: 1
+jobs:
+  build:
+    working_directory: ~/simple-serverless-rule-engine
+    steps:
+      - checkout
+      - run:
+          command: |
+            sudo pip install pipenv
+            pipenv install
+      - run:
+          command: |
+            pytest
