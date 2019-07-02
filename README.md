@@ -1,6 +1,8 @@
 # simple-serverless-rule-engine
 A __lightweight__ yet __powerful__ rule engine that allows declarative specification of business rules and **saves tons of repeated development work**.
 
+This framework already powered more than 100K scores & decisions at my [work](https://www.fundscorner.com) and can be deployed as a serverless function (FaaS) or as a container.
+
 ## Key Features
 1. Ability to __declaratively__ author both Scoring and Decision Rules.
 2. Ability to __version control__ rule declarations thus enabling auditing of rule changes over a period of time.
@@ -10,7 +12,6 @@ modular, hierarchical rules.
 5. The consumer of the rules services __will not__ know about the rule details. The consumer just invokes the service and get the rule results. This enables a clean segregation between rule owners & rule consumers.
 6. Written in Python 3.6 with minimal requirements
 
-This framework already powered more than 100K scores & decisions and can be deployed as a serverless function (FaaS) or as a container.
 
 ## Demo
 
