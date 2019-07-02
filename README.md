@@ -12,6 +12,8 @@ modular, hierarchical rules.
 5. The consumer of the rules services __will not__ know about the rule details. The consumer just invokes the service and get the rule results. This enables a clean segregation between rule owners & rule consumers.
 6. Written in Python 3.6 with minimal requirements
 
+## Build Status
+[![CircleCI](https://circleci.com/gh/jeyabalajis/simple-serverless-rule-engine/tree/master.svg?style=svg)](https://circleci.com/gh/jeyabalajis/simple-serverless-rule-engine/tree/master)
 
 ## Demo
 
