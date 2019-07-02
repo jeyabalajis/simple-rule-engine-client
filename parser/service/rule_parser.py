@@ -410,7 +410,7 @@ def __init_rule_results(rule_lexicon):
     }
 
 
-def execute_rule(db, rule_name, p_facts):
+def execute_rule(rule_name, p_facts):
     """
 
     :param db:
@@ -429,11 +429,11 @@ def execute_rule(db, rule_name, p_facts):
         __logger.error("facts are mandatory!")
         return report(1, "facts node is mandatory")
 
-    if __is_empty(db):
-        __logger.error("db handle mandatory!")
-        return report(1, "database handle is mandatory")
-
-    init_rule_db(db)
+    # if __is_empty(db):
+    #     __logger.error("db handle mandatory!")
+    #     return report(1, "database handle is mandatory")
+    #
+    # init_rule_db(db)
 
     global __facts
     __facts = p_facts
