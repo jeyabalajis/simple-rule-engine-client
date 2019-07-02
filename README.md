@@ -10,6 +10,8 @@ modular, hierarchical rules.
 5. The consumer of the rules services __will not__ know about the rule details. The consumer just invokes the service and get the rule results. This enables a clean segregation between rule owners & rule consumers.
 6. Written in Python 3.6 with minimal requirements
 
+This framework already powered more than 100K scores & decisions and can be deployed as a serverless function (FaaS) or as a container.
+
 ## Demo
 
 1. Clone or download the project into your local repository.
