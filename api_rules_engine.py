@@ -3,6 +3,7 @@ import os
 
 from flask import Flask, request
 from flask_cors import CORS
+from flasgger import Swagger
 
 from common.configure.config import load_config
 from api.controllers import rule_engine_controller
@@ -34,6 +35,7 @@ if not env_name:
 load_config(env_name)
 
 application = Flask(__name__)
+Swagger(application)
 
 application.debug = False
 
@@ -59,6 +61,26 @@ application.add_url_rule(
 
 @application.route('/api_rules_engine/v1/rules/<rule_name>/execute', methods=['POST'])
 def execute_rule_post(rule_name):
+    """
+    Use this endpoint to execute the rule engine for a rule for a fact set.
+    ---
+    tags:
+        - Execute Rule Engine
+    parameters:
+        - name: rule_name
+          in: path
+          type: string
+          required: true
+          description: Rule name
+        - name: facts
+          in: body
+          type: string
+          required: true
+          description: Facts JSON. The root node must be facts
+    responses:
+        200:
+            description: Rule result
+    """
     body = request.get_json()
     return rule_engine_controller.execute_rule_engine(rule_name, body)
 
