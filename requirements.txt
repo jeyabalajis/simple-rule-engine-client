@@ -31,7 +31,7 @@ more-itertools==7.1.0
 packaging==19.0
 placebo==0.9.0
 pluggy==0.12.0
-py==1.8.0
+py==1.10.0
 pymongo==3.7.2
 pyparsing==2.4.0
 pyrsistent==0.15.4
