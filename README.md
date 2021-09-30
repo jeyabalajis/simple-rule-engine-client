@@ -1,5 +1,5 @@
 # simple-serverless-rule-engine
-A __lightweight__ yet __powerful__ rule engine that allows declarative specification of business rules and **saves tons of repeated development work**.
+A _lightweight_ yet _powerful_ rule engine that allows declarative specification of business rules and **saves tons of repeated development work**.
 
 This framework already powered more than 100K scores & decisions at [FUNDSCORNER](https://www.fundscorner.com) and can be deployed as a serverless function (FaaS) or as a container.
 
