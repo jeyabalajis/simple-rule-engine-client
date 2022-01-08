@@ -3,6 +3,8 @@ A _lightweight_ yet _powerful_ rule engine that allows declarative specification
 
 This framework already powered more than 100K scores & decisions at [FUNDSCORNER](https://www.fundscorner.com) and can be deployed as a serverless function (FaaS) or as a container.
 
+For an object oriented take on this rule engine, please see [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine)
+
 ## Key Features
 1. Ability to __declaratively__ author both Scoring and Decision Rules.
 2. Ability to __version control__ rule declarations thus enabling auditing of rule changes over a period of time.
