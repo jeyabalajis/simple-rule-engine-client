@@ -5,7 +5,7 @@ from services.util.json_file_util import JsonFileUtil
 
 
 class TestSimpleRuleEngineAdapter(TestCase):
-    def test_get_rule(self):
+    def test_rule_simple_decision(self):
         json_file_util = JsonFileUtil(file_name_with_path="./examples/simple_decision.json")
         decision_dict = json_file_util.read_file()
 
