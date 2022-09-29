@@ -1,43 +1,66 @@
 # simple-serverless-rule-engine
-A _lightweight_ yet _powerful_ rule engine that allows declarative specification of business rules and **saves tons of repeated development work**.
 
-This framework already powered more than 100K scores & decisions at [FUNDSCORNER](https://www.fundscorner.com) and can be deployed as a serverless function (FaaS) or as a container.
+An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine) that illustrates how rules can be declaratively specified (json etc.), stored, and later de-serialized into simple-rule-engine constructs and executed with data.
 
-For an object oriented take on this rule engine, please see [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine)
+# Examples
 
-## Key Features
-1. Ability to __declaratively__ author both Scoring and Decision Rules.
-2. Ability to __version control__ rule declarations thus enabling auditing of rule changes over a period of time.
-3. Ability to author **_chained rules_**. Evaluation of one rule can refer to the result of another rule, thus enabling 
-modular, hierarchical rules. 
-4. The rule engine is __server less__! - perfect for hosting it as an independent micro-service.
-5. The consumer of the rules services __will not__ know about the rule details. The consumer just invokes the service and get the rule results. This enables a clean segregation between rule owners & rule consumers.
-6. Written in Python 3.6 with minimal requirements
+## A simple decision tree involving facts
 
-## Demo
+### Decision matrix
 
-1. Clone or download the project into your local repository.
-2. Import the postman collection stored under examples folder into Postman
-3. Try out the service!  
+| Bureau Score | Marital Status | Business Ownership | Decision
+| :----------: | :----------------: | :----------------: | --------:|
+| between 650 and 800        | in [Married, Unspecified]                | in [Owned by Self, Owned by Family] | GO       |
 
-## Installation Instructions
+### JSON Rule specification
 
-### Pre-requisites
+```json
+{
+    "RuleDecision": {
+        "RuleRows": [
+            {
+                "WhenAll": [
+                    {
+                        "NumericToken": "cibil_score",
+                        "Between": {
+                            "floor": 650,
+                            "ceiling": 800
+                        }
+                    },
+                    {
+                        "StringToken": "business_ownership",
+                        "In": [
+                            "Owned by Self",
+                            "Owned by Family"
+                        ]
+                    }
+                ],
+                "Consequent": "GO"
+            }
+        ]
+    }
+}
+```
 
-#### Database
-1. The rule templates must be stored in a MongoDB schema. You can specify the schema name under config.ini against the key rule_db
-2. You can refer to the examples folder for some common examples of rule templates for both Score and Decision rules
+### Test Harness
 
-#### AWS
-1. Create a secret name prod/DBAuthentication with the following key value pairs to point to the rules database
+```python
+from unittest import TestCase
 
-|Key Name|Value|
-|:------:|:---:|
-|db_url|URI of the MongoDB Database|
-|user_name|User name to login to the database|
-|password|Password to login to the database|
+from services.adapter.simple_rule_engine_adapter import SimpleRuleEngineAdapter
+from services.util.json_file_util import JsonFileUtil
 
-1. Clone or download the project into your local repository.
-2. Create a virtual environment with Python 3.6 or above and activate the same.
-3. To deploy this as a FaaS through [AWS Lambda](https://aws.amazon.com/lambda/), use [Zappa](https://www.zappa.io/), a framework for Serverless Python Web Services - Powered by AWS Lambda and API Gateway
-4. To deploy this as a container in a Kubernetes cluster, use [Fission](https://fission.io/), a framework for serverless functions on Kubernetes.
+
+class TestSimpleRuleEngineAdapter(TestCase):
+    def test_rule_simple_decision(self):
+        json_file_util = JsonFileUtil(file_name_with_path="./examples/simple_decision.json")
+        decision_dict = json_file_util.read_file()
+
+        rule_engine_adapter = SimpleRuleEngineAdapter(rule_dict=decision_dict)
+        decision_rule = rule_engine_adapter.get_rule()
+
+        assert type(decision_rule).__name__ == "RuleDecision"
+
+        fact = dict(cibil_score=700, business_ownership="Owned by Self")
+        assert decision_rule.execute(token_dict=fact) == "GO"
+```
