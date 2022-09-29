@@ -1,0 +1,42 @@
+{
+  "RuleScore": {
+    "RuleSets": [
+      {
+        "RuleRows": [
+          {
+            "WhenAll": [
+              {
+                "NumericToken": "age",
+                "Gte": 35
+              },
+              {
+                "StringToken": "pet",
+                "In": [
+                  "dog"
+                ]
+              }
+            ],
+            "Consequent": 10
+          }
+        ],
+        "Weight": 0.5
+      },
+      {
+        "RuleRows": [
+          {
+            "WhenAll": [
+              {
+                "StringToken": "domicile",
+                "In": [
+                  "KA"
+                ]
+              }
+            ],
+            "Consequent": 5
+          }
+        ],
+        "Weight": 0.5
+      }
+    ]
+  }
+}

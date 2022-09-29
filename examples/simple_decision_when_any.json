@@ -1,0 +1,21 @@
+{
+  "RuleDecision": {
+    "RuleRows": [
+      {
+        "WhenAny": [
+          {
+            "NumericToken": "age",
+            "Gte": 35
+          },
+          {
+            "StringToken": "pet",
+            "NotIn": [
+              "dog"
+            ]
+          }
+        ],
+        "Consequent": "GO"
+      }
+    ]
+  }
+}
