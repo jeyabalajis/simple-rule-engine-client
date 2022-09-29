@@ -64,3 +64,83 @@ class TestSimpleRuleEngineAdapter(TestCase):
         fact = dict(cibil_score=700, business_ownership="Owned by Self")
         assert decision_rule.execute(token_dict=fact) == "GO"
 ```
+
+## A simple scoring rule
+
+### Scoring Rule
+
+- If age >= 35 and pet in dog, score is 10, with a weight of 0.5
+- If domicile is in KA, score is 5, with a weight of 0.5
+
+### JSON Rule specification
+
+```json
+{
+  "RuleScore": {
+    "RuleSets": [
+      {
+        "RuleRows": [
+          {
+            "WhenAll": [
+              {
+                "NumericToken": "age",
+                "Gte": 35
+              },
+              {
+                "StringToken": "pet",
+                "In": [
+                  "dog"
+                ]
+              }
+            ],
+            "Consequent": 10
+          }
+        ],
+        "Weight": 0.5
+      },
+      {
+        "RuleRows": [
+          {
+            "WhenAll": [
+              {
+                "StringToken": "domicile",
+                "In": [
+                  "KA"
+                ]
+              }
+            ],
+            "Consequent": 5
+          }
+        ],
+        "Weight": 0.5
+      }
+    ]
+  }
+}
+```
+
+### Test Harness
+
+```python
+from unittest import TestCase
+
+from services.adapter.simple_rule_engine_adapter import SimpleRuleEngineAdapter
+from services.util.json_file_util import JsonFileUtil
+
+
+class TestSimpleRuleEngineAdapter(TestCase):
+    def test_rule_simple_score(self):
+        json_file_util = JsonFileUtil(file_name_with_path="./examples/simple_score.json")
+        score_rule_dict = json_file_util.read_file()
+
+        rule_engine_adapter = SimpleRuleEngineAdapter(rule_dict=score_rule_dict)
+        score_rule = rule_engine_adapter.get_rule()
+
+        assert type(score_rule).__name__ == "RuleScore"
+
+        fact = dict(age=40, pet="dog", domicile="TN")
+        assert score_rule.execute(token_dict=fact) == 5.0
+
+        fact = dict(age=40, pet="dog", domicile="KA")
+        assert score_rule.execute(token_dict=fact) == 7.5
+```
