@@ -42,6 +42,34 @@ An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-
 }
 ```
 
+### Custom Rule Grammer
+
+This is currently work in progress.
+
+Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [Lark](https://github.com/lark-parser/lark).
+
+```
+DecisionRule my_rule {
+    when {
+        cibil_score >= 650 and 
+        age > 35 and 
+        house_ownership in (owned, rented) and 
+        pet == dog
+    }
+    then true
+    when {
+        cibil_score < 650 or
+        $RULE_overdue_rule < 0
+    }
+    then false
+}
+DecisionRule overdue_rule {
+    when {
+        overdue_in_months > 3
+    }
+    then -10
+```
+
 ### Test Harness
 
 ```python
