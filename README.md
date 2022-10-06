@@ -1,6 +1,6 @@
 # simple-serverless-rule-engine
 
-An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine) that illustrates how rules can be declaratively specified (json etc.), stored, and later de-serialized into simple-rule-engine constructs and executed with data.
+An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine) that illustrates how rules can be declaratively specified (json, yaml, custom grammar etc.), stored, and later de-serialized into simple-rule-engine constructs and executed with data.
 
 # Examples
 
