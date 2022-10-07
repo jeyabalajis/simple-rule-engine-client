@@ -1,4 +1,4 @@
-from lark import Lark
+from lark import Lark, Tree
 
 f = open("./decision_rule.lark").read()
 
@@ -25,4 +25,7 @@ text = """
         }
         then -10
     }"""
-print(parser.parse(text))
+
+tree = parser.parse(text)
+print(tree.pretty())
+

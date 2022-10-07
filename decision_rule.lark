@@ -1,29 +1,30 @@
-start: rule
+start: _rule+
 
-rule: decisionrule+
+_rule: DECISION_RULE CNAME "{" rulerow+ "}"
 
-decisionrule: DECISION_RULE CNAME "{" rulerow+ "}"
+rulerow: "when" "{" _condition "}" "then" decision
+decision: DECISION
 
-rulerow: "when" "{" condition "}" "then" DECISION
-
-condition: expression 
+_condition: expression 
         | [expression (conditional expression)*]
 
+conditional: CONDITIONAL
 expression: TOKEN_OR_RULE INLIST word_list 
         | TOKEN_OR_RULE EQ WORD
-        | TOKEN_OR_RULE operator FLOAT
-        | TOKEN_OR_RULE operator INT
-        | TOKEN_OR_RULE operator SIGNED_INT
+        | TOKEN_OR_RULE OPERATOR FLOAT
+        | TOKEN_OR_RULE OPERATOR INT
+        | TOKEN_OR_RULE OPERATOR SIGNED_INT
         | TOKEN_OR_RULE EQ DECISION
         
 word_list: WORD
         | "(" [WORD ("," WORD)*] ")"
 
-operator: "<" | ">" | "<=" | ">=" | "=="
 
 
-conditional: "and" | "or"
 
+CONDITIONAL: "and" | "or"
+
+OPERATOR: "<" | ">" | "<=" | ">=" | "=="
 TOKEN_OR_RULE: CNAME | ("$RULE_" CNAME)
 DECISION_RULE: "DecisionRule"
 DECISION: ("true" | "false" | SIGNED_INT)
