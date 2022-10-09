@@ -145,7 +145,7 @@ class TestSimpleRuleEngineAdapter(TestCase):
         assert score_rule.execute(token_dict=fact) == 7.5
 ```
 
-## Custom SQL Like Rule Grammer
+## Custom SQL Like Rule Grammar
 
 This is currently work in progress.
 
