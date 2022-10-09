@@ -42,34 +42,6 @@ An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-
 }
 ```
 
-### Custom Rule Grammer
-
-This is currently work in progress.
-
-Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [Lark](https://github.com/lark-parser/lark).
-
-```
-DecisionRule my_rule {
-    when {
-        cibil_score >= 650 and 
-        age > 35 and 
-        house_ownership in (owned, rented) and 
-        pet == dog
-    }
-    then true
-    when {
-        cibil_score < 650 or
-        $RULE_overdue_rule < 0
-    }
-    then false
-}
-DecisionRule overdue_rule {
-    when {
-        overdue_in_months > 3
-    }
-    then -10
-```
-
 ### Test Harness
 
 ```python
@@ -171,4 +143,114 @@ class TestSimpleRuleEngineAdapter(TestCase):
 
         fact = dict(age=40, pet="dog", domicile="KA")
         assert score_rule.execute(token_dict=fact) == 7.5
+```
+
+## Custom SQL Like Rule Grammer
+
+This is currently work in progress.
+
+Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [Lark](https://github.com/lark-parser/lark).
+
+### Sample Rule
+```
+my_rule {
+    when {
+        cibil_score >= 650 and 
+        age > 35 and 
+        house_ownership in (owned, rented) and
+        (
+            total_overdue_amount == 0 or 
+            number_of_overdue_loans < 2 or
+            (
+                number_of_overdue_loans >= 2 and
+                big_shot == yes
+            )
+        ) and
+        pet == dog
+    }
+    then true
+    when {
+        cibil_score < 650 or
+        $RULE_overdue_rule < 0
+    }
+    then false
+}
+overdue_rule {
+    when {
+        overdue_in_months > 3
+    }
+    then -10
+}
+```
+
+### Parse Tree (AST)
+
+```
+ start
+   decisionrule
+     my_rule
+     rulerow
+       expression
+         cibil_score        
+         >=
+         650
+       conditional       and
+       expression
+         age
+         >
+         35
+       conditional       and
+       expression
+         house_ownership    
+         in
+         word_list
+           owned
+           rented
+       conditional       and
+       expression
+         expression
+           total_overdue_amount
+           ==
+           0
+         conditional     or
+         expression
+           number_of_overdue_loans
+           <
+           2
+         conditional     or
+         expression
+           expression
+             number_of_overdue_loans
+             >=
+             2
+           conditional   and
+           expression
+             big_shot
+             ==
+             yes
+       conditional       and
+       expression
+         pet
+         ==
+         dog
+       decision  true
+     rulerow
+       expression
+         cibil_score
+         <
+         650
+       conditional       or
+       expression
+         $RULE_overdue_rule
+         <
+         0
+       decision  false
+   decisionrule
+     overdue_rule
+     rulerow
+       expression
+         overdue_in_months
+         >
+         3
+       decision  -10
 ```
