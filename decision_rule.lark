@@ -1,6 +1,6 @@
-start: _rule+
+start: decisionrule+
 
-_rule: DECISION_RULE CNAME "{" rulerow+ "}"
+decisionrule: CNAME "{" rulerow+ "}"
 
 rulerow: "when" "{" _condition "}" "then" decision
 decision: DECISION
@@ -15,6 +15,7 @@ expression: TOKEN_OR_RULE INLIST word_list
         | TOKEN_OR_RULE OPERATOR INT
         | TOKEN_OR_RULE OPERATOR SIGNED_INT
         | TOKEN_OR_RULE EQ DECISION
+        | "(" [expression (conditional expression)*] ")"
         
 word_list: WORD
         | "(" [WORD ("," WORD)*] ")"
