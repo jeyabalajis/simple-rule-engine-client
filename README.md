@@ -145,14 +145,14 @@ class TestSimpleRuleEngineAdapter(TestCase):
         assert score_rule.execute(token_dict=fact) == 7.5
 ```
 
-## Custom SQL Like Rule Grammer
+## Custom SQL Like Rule Grammar
 
 This is currently work in progress.
 
 Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [Lark](https://github.com/lark-parser/lark).
 
 ### Sample Rule
-```
+```lark
 my_rule {
     when {
         cibil_score between 650 and 750 and 
