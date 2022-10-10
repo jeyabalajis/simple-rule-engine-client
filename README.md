@@ -152,7 +152,7 @@ This is currently work in progress.
 Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [Lark](https://github.com/lark-parser/lark).
 
 ### Sample Rule
-```
+```lark
 my_rule {
     when {
         cibil_score >= 650 and 
