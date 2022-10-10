@@ -2,6 +2,8 @@
 
 An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-engine) that illustrates how rules can be declaratively specified (json, yaml, custom grammar etc.), stored, and later de-serialized into simple-rule-engine constructs and executed with data.
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/jeyabalajis/simple-serverless-rule-engine/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/jeyabalajis/simple-serverless-rule-engine/tree/main)
+
 # Table of Contents
 
 - [A Simple Decision Tree](#a-simple-decision-tree-involving-facts)
