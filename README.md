@@ -155,7 +155,7 @@ Here's an illustration of a rule that's based on a [custom grammar](decision_rul
 ```
 my_rule {
     when {
-        cibil_score >= 650 and 
+        cibil_score between 650 and 750 and 
         age > 35 and 
         house_ownership in (owned, rented) and
         (
@@ -163,7 +163,7 @@ my_rule {
             number_of_overdue_loans < 2 or
             (
                 number_of_overdue_loans >= 2 and
-                big_shot == yes
+                big_shot == true
             )
         ) and
         pet == dog
@@ -183,74 +183,83 @@ overdue_rule {
 }
 ```
 
-### Parse Tree (AST)
+### Parse Tree
 
 ```
- start
-   decisionrule
-     my_rule
-     rulerow
-       expression
-         cibil_score        
-         >=
-         650
-       conditional       and
-       expression
-         age
-         >
-         35
-       conditional       and
-       expression
-         house_ownership    
-         in
-         word_list
-           owned
-           rented
-       conditional       and
-       expression
-         expression
-           total_overdue_amount
-           ==
-           0
-         conditional     or
-         expression
-           number_of_overdue_loans
-           <
-           2
-         conditional     or
-         expression
-           expression
-             number_of_overdue_loans
-             >=
-             2
-           conditional   and
-           expression
-             big_shot
-             ==
-             yes
-       conditional       and
-       expression
-         pet
-         ==
-         dog
-       decision  true
-     rulerow
-       expression
-         cibil_score
-         <
-         650
-       conditional       or
-       expression
-         $RULE_overdue_rule
-         <
-         0
-       decision  false
-   decisionrule
-     overdue_rule
-     rulerow
-       expression
-         overdue_in_months
-         >
-         3
-       decision  -10
+start
+  decisionrule
+    my_rule
+    rulerow
+      when
+      condition
+        expression
+          cibil_score
+          between
+          number        650        
+          number        750        
+        conditional     and        
+        expression
+          age
+          gt
+          number        35
+        conditional     and        
+        expression
+          house_ownership
+          in
+          word_list
+            owned
+            rented
+        conditional     and        
+        expression
+          expression
+            total_overdue_amount   
+            eq
+            number      0
+          conditional   or
+          expression
+            number_of_overdue_loans
+            lt
+            number      2
+          conditional   or
+          expression
+            expression
+              number_of_overdue_loans
+              gte
+              number    2
+            conditional and
+            expression
+              big_shot
+              eq
+              boolean
+        conditional     and
+        expression
+          pet
+          eq
+          string        dog
+      then
+      decision  true
+    rulerow
+      when
+      condition
+        expression
+          cibil_score
+          lt
+          number        650
+        conditional     or
+        expression
+          $RULE_overdue_rule
+          lt
+          number        0
+      then
+      decision  false
+  decisionrule
+    overdue_rule
+    rulerow
+      when
+      expression
+        overdue_in_months
+        gt
+        number  3
+      then
+      decision  -10 
 ```

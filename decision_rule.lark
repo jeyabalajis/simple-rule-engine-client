@@ -2,41 +2,62 @@ start: decisionrule+
 
 decisionrule: CNAME "{" rulerow+ "}"
 
-rulerow: "when" "{" _condition "}" "then" decision
+rulerow: when "{" condition "}" then decision
 decision: DECISION
 
-_condition: expression 
+?when: WHEN
+?then: THEN
+
+?condition: expression 
         | [expression (conditional expression)*]
 
 conditional: CONDITIONAL
 expression: TOKEN_OR_RULE INLIST word_list 
-        | TOKEN_OR_RULE EQ WORD
-        | TOKEN_OR_RULE OPERATOR FLOAT
-        | TOKEN_OR_RULE OPERATOR INT
-        | TOKEN_OR_RULE OPERATOR SIGNED_INT
-        | TOKEN_OR_RULE EQ DECISION
+        | TOKEN_OR_RULE operator value
+        | TOKEN_OR_RULE between numeric "and" numeric
         | "(" [expression (conditional expression)*] ")"
         
 word_list: WORD
         | "(" [WORD ("," WORD)*] ")"
 
+between: "between"
 
+?numeric: SIGNED_NUMBER  -> number 
 
+?value: SIGNED_NUMBER   -> number
+        | boolean
+        | string
 
+?operator: lt
+        | gt
+        | lte
+        | gte
+        | eq
+
+string: CNAME
+boolean: "true" | "false"
+lt: "<"
+gt: ">"
+lte: "<="
+gte: ">="
+eq: "=="
+
+WHEN: "when"
+THEN: "then"
+DECISION: ("true" | "false" | SIGNED_INT)
 CONDITIONAL: "and" | "or"
-
-OPERATOR: "<" | ">" | "<=" | ">=" | "=="
 TOKEN_OR_RULE: CNAME | ("$RULE_" CNAME)
 DECISION_RULE: "DecisionRule"
-DECISION: ("true" | "false" | SIGNED_INT)
+
 INLIST: "in"
 EQ: "=="
 
 %import common.WORD
 %import common.INT
 %import common.SIGNED_INT
+%import common.SIGNED_NUMBER
 %import common.FLOAT
 %import common.CNAME
-%import common.ESCAPED_STRING   -> STRING
+%import common.ESCAPED_STRING
 %import common.WS
 %ignore WS
