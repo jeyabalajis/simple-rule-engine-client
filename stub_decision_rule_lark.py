@@ -75,6 +75,6 @@ def walk_tree(tree, level=0):
         walk_tree(child, _level)
     
 
-# walk_tree(tree)
+# walk_tree(rule)
 
-# SimpleRuleEngineTransformer().transform(tree)
+SimpleRuleEngineTransformer(tree).get_rule()

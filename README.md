@@ -203,24 +203,24 @@ start
         expression
           cibil_score
           between
-          number        650        
-          number        750        
-        conditional     and        
+          number        650
+          number        750
+        conditional     and
         expression
           age
           gt
           number        35
-        conditional     and        
+        conditional     and
         expression
           house_ownership
           in
           word_list
             owned
             rented
-        conditional     and        
+        conditional     and
         expression
           expression
-            total_overdue_amount   
+            total_overdue_amount
             eq
             number      0
           conditional   or
@@ -238,14 +238,15 @@ start
             expression
               big_shot
               eq
-              boolean
+              boolean   true
         conditional     and
         expression
           pet
           eq
           string        dog
       then
-      decision  true
+      decision
+        boolean true
     rulerow
       when
       condition
@@ -259,7 +260,8 @@ start
           lt
           number        0
       then
-      decision  false
+      decision
+        boolean false
   decisionrule
     overdue_rule
     rulerow
@@ -269,5 +271,6 @@ start
         gt
         number  3
       then
-      decision  -10 
+      decision
+        number  -10
 ```

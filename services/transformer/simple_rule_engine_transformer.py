@@ -1,42 +1,78 @@
-from lark import Transformer
+from typing import List
+
+from lark import Tree, Token
 from simpleruleengine.conditional.conditional import Conditional
-from simpleruleengine.conditional.when_all import WhenAll
-from simpleruleengine.conditional.when_any import WhenAny
 from simpleruleengine.expression.expression import Expression
 from simpleruleengine.operator.between import Between
-from simpleruleengine.operator.equal import Eq
-from simpleruleengine.operator.greater_than import Gt
-from simpleruleengine.operator.greater_than_equal import Gte
-from simpleruleengine.operator.less_than import Lt
-from simpleruleengine.operator.less_than_equal import Lte
-from simpleruleengine.operator.operator import Operator
-from simpleruleengine.operator.string_in import In
-from simpleruleengine.operator.string_not_in import NotIn
-from simpleruleengine.rule.rule import Rule
 from simpleruleengine.rule.rule_decision import RuleDecision
-from simpleruleengine.rule.rule_score import RuleScore
 from simpleruleengine.rulerow.rule_row_decision import RuleRowDecision
-from simpleruleengine.rulerow.rule_row_score import RuleRowScore
 from simpleruleengine.ruleset.rule_set_decision import RuleSetDecision
-from simpleruleengine.ruleset.rule_set_score import RuleSetScore
 from simpleruleengine.token.numeric_token import NumericToken
 from simpleruleengine.token.string_token import StringToken
-from simpleruleengine.token.token import Token
+from simpleruleengine.rule.rule import Rule
 
 
-class SimpleRuleEngineTransformer(Transformer):
-    def expression(self, items):
-        token = None
-        if items[2].data == "number":
-            token = NumericToken(items[0])
+class SimpleRuleEngineTransformer:
+    DECISION_RULE = "decisionrule"
 
-        if items[2].data in ("word_list", "string"):
-            token = StringToken(items[0])
-        
-        operator = None
-        if items[1].data == "between":
-            operator = Between(floor=float(items[2].children[0].value), ceiling=float(items[3].children[0].value))
-        
-        print("Token: {} Operator: {}".format(token, operator))
-        return Expression(token, operator)
-            
+    def __init__(self, tree: Tree):
+        self.tree = tree
+        self._visited = {}
+
+    def get_rule(self):
+        print(self.tree.data)
+        for rule in self.tree.children:
+            if rule.data == self.DECISION_RULE:
+                rule_decision = self._get_decision_rule(rule)
+
+    def _get_decision_rule(self, rule: Tree) -> RuleDecision:
+        rule_name = rule.children[0]
+        print("rule name: {}".format(rule_name))
+        if (
+                rule_name in self._visited and
+                self._visited[rule_name] is True
+        ):
+            return
+
+        rule_row_objects: List[RuleRowDecision] = []
+        for rule_row in rule.children[1:]:
+            rule_row_objects.append(self._get_rule_row_decision(rule_row))
+
+        rule_set_objects = [RuleSetDecision(
+            *tuple(rule_row_objects)
+        )]
+
+        return RuleDecision(
+            *tuple(rule_set_objects)
+        )
+
+    def _get_rule_row_decision(self, rule_row: Tree) -> RuleRowDecision:
+        antecedent = self._get_conditional(rule_row.children[1])
+        consequent = self._get_consequent(rule_row.children[3])
+
+    def _get_conditional(self, conditional: Tree) -> Conditional:
+        pass
+
+    def _get_expression(self, expression: Tree) -> Expression:
+        pass
+
+    def _get_consequent(self, consequent: Tree):
+        return self._get_token_value(consequent.children[0])
+
+    def _get_token_value(self, token: Tree):
+        print("Token {} {}".format(type(token).__name__, token.data))
+        if token.data == "boolean":
+            return self._get_boolean(token.children[0])
+
+        if token.data == "number":
+            return self._get_number(token.children[0])
+
+    def _get_boolean(self, boolean_token: Token):
+        print("Value: {}".format(boolean_token.value))
+        if boolean_token.value == "true":
+            return True
+        else:
+            return False
+
+    def _get_number(self, numeric_token: Token):
+        return float(numeric_token.value)

@@ -3,7 +3,9 @@ start: decisionrule+
 decisionrule: CNAME "{" rulerow+ "}"
 
 rulerow: when "{" condition "}" then decision
-decision: DECISION
+decision: boolean
+        | numeric
+        | string
 
 ?when: WHEN
 ?then: THEN
@@ -35,16 +37,18 @@ between: "between"
         | eq
 
 string: CNAME
-boolean: "true" | "false"
+boolean: TRUE | FALSE
 lt: "<"
 gt: ">"
 lte: "<="
 gte: ">="
 eq: "=="
 
+TRUE: "true"
+FALSE: "false"
 WHEN: "when"
 THEN: "then"
-DECISION: ("true" | "false" | SIGNED_INT)
+DECISION: ("true" | "false" | SIGNED_NUMBER | CNAME)
 CONDITIONAL: "and" | "or"
 TOKEN_OR_RULE: CNAME | ("$RULE_" CNAME)
 DECISION_RULE: "DecisionRule"
