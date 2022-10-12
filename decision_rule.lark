@@ -10,15 +10,17 @@ decision: boolean
 ?when: WHEN
 ?then: THEN
 
-?condition: expression 
+!condition: expression
         | [expression (conditional expression)*]
 
 conditional: CONDITIONAL
-expression: TOKEN_OR_RULE INLIST word_list 
-        | TOKEN_OR_RULE operator value
-        | TOKEN_OR_RULE between numeric "and" numeric
+expression: token in_operator word_list
+        | token operator value
+        | token between numeric "and" numeric
         | "(" [expression (conditional expression)*] ")"
         
+token: TOKEN_OR_RULE
+
 word_list: WORD
         | "(" [WORD ("," WORD)*] ")"
 
@@ -29,6 +31,8 @@ between: "between"
 ?value: SIGNED_NUMBER   -> number
         | boolean
         | string
+
+?in_operator: INLIST
 
 ?operator: lt
         | gt
