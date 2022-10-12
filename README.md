@@ -178,16 +178,9 @@ my_rule {
     }
     then true
     when {
-        cibil_score < 650 or
-        $RULE_overdue_rule < 0
+        cibil_score < 650
     }
     then false
-}
-overdue_rule {
-    when {
-        overdue_in_months > 3
-    }
-    then -10
 }
 ```
 
@@ -201,76 +194,149 @@ start
       when
       condition
         expression
-          cibil_score
+          token	cibil_score
           between
-          number        650
-          number        750
-        conditional     and
+          number	650
+          number	750
+        conditional	and
         expression
-          age
+          token	age
           gt
-          number        35
-        conditional     and
+          number	35
+        conditional	and
         expression
-          house_ownership
+          token	house_ownership
           in
           word_list
             owned
             rented
-        conditional     and
+        conditional	and
         expression
           expression
-            total_overdue_amount
+            token	total_overdue_amount
             eq
-            number      0
-          conditional   or
+            number	0
+          conditional	or
           expression
-            number_of_overdue_loans
+            token	number_of_overdue_loans
             lt
-            number      2
-          conditional   or
+            number	2
+          conditional	or
           expression
             expression
-              number_of_overdue_loans
+              token	number_of_overdue_loans
               gte
-              number    2
-            conditional and
+              number	2
+            conditional	and
             expression
-              big_shot
+              token	big_shot
               eq
-              boolean   true
-        conditional     and
+              boolean	true
+        conditional	and
         expression
-          pet
+          token	pet
           eq
-          string        dog
+          string	dog
       then
       decision
-        boolean true
+        boolean	true
     rulerow
       when
       condition
         expression
-          cibil_score
+          token	cibil_score
           lt
-          number        650
-        conditional     or
-        expression
-          $RULE_overdue_rule
-          lt
-          number        0
+          number	650
       then
       decision
-        boolean false
-  decisionrule
-    overdue_rule
-    rulerow
-      when
-      expression
-        overdue_in_months
-        gt
-        number  3
-      then
-      decision
-        number  -10
+        boolean	false
+```
+
+### Test Harness
+
+```python
+from unittest import TestCase
+
+from lark import Lark
+
+from services.transformer.simple_rule_engine_transformer import SimpleRuleEngineTransformer
+
+
+class TestCustomDecisionRuleLark(TestCase):
+    def test_rule_complex_decision(self):
+        with open("./decision_rule.lark") as rule_grammar_file:
+            rule_grammar = rule_grammar_file.read()
+
+        parser = Lark(rule_grammar)
+
+        custom_rule = """
+            my_rule {
+                when {
+                    cibil_score between 650 and 750 and 
+                    age > 35 and 
+                    house_ownership in (owned, rented) and
+                    (
+                        total_overdue_amount == 0 or 
+                        number_of_overdue_loans < 2 or
+                        (
+                            number_of_overdue_loans >= 2 and
+                            big_shot == true
+                        )
+                    ) and
+                    pet == dog
+                }
+                then true
+                when {
+                    cibil_score < 650
+                }
+                then false
+            }
+            """
+
+        tree = parser.parse(custom_rule)
+        print(tree.pretty())
+
+        decision_rule = SimpleRuleEngineTransformer(tree).get_rule()
+
+        # Evaluate the Decision Rule by passing data
+        facts = dict(
+            cibil_score=700,
+            age=40,
+            house_ownership="owned",
+            total_overdue_amount=0,
+            pet="dog"
+        )
+        assert decision_rule.execute(token_dict=facts) is True
+
+        facts = dict(
+            cibil_score=700,
+            age=40,
+            house_ownership="owned",
+            total_overdue_amount=100,
+            number_of_overdue_loans=1,
+            pet="dog"
+        )
+        assert decision_rule.execute(token_dict=facts) is True
+
+        facts = dict(
+            cibil_score=700,
+            age=40,
+            house_ownership="owned",
+            total_overdue_amount=100,
+            number_of_overdue_loans=2,
+            big_shot="true",
+            pet="dog"
+        )
+        assert decision_rule.execute(token_dict=facts) is True
+
+        facts = dict(
+            cibil_score=600,
+            age=40,
+            house_ownership="owned",
+            total_overdue_amount=100,
+            number_of_overdue_loans=2,
+            big_shot="false",
+            pet="dog"
+        )
+        assert decision_rule.execute(token_dict=facts) is False
 ```
