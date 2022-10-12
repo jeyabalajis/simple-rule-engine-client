@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="shaped the parse tree further for evaluation">
-      <change afterPath="$PROJECT_DIR$/test_custom_decision_rule_lark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="Tested Rule Engine Transformer that gets Lark Parse Tree and returns Decision Rule.">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decision_rule.lark" beforeDir="false" afterPath="$PROJECT_DIR$/decision_rule.lark" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transformer/simple_rule_engine_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/transformer/simple_rule_engine_transformer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/util/simple_rule_engine_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/util/simple_rule_engine_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stub_decision_rule_lark.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665467655866</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Tested Rule Engine Transformer that gets Lark Parse Tree and returns Decision Rule.">
+      <created>1665556158683</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665556158683</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -390,7 +391,8 @@
     <MESSAGE value="added circleci condition" />
     <MESSAGE value="added circleci build status" />
     <MESSAGE value="shaped the parse tree further for evaluation" />
-    <option name="LAST_COMMIT_MESSAGE" value="shaped the parse tree further for evaluation" />
+    <MESSAGE value="Tested Rule Engine Transformer that gets Lark Parse Tree and returns Decision Rule." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested Rule Engine Transformer that gets Lark Parse Tree and returns Decision Rule." />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1664344728851">
