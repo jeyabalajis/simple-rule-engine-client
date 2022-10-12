@@ -57,6 +57,15 @@ def _get_greater_than(base_value):
     assert operator_value is not None
     return Gt(operator_value)
 
+def _get_less_than(base_value):
+    operator_value = _get_operator_value(base_value)
+    assert operator_value is not None
+    return Lt(operator_value)
+
+def _get_less_than_equal(base_value):
+    operator_value = _get_operator_value(base_value)
+    assert operator_value is not None
+    return Lte(operator_value)
 
 def _get_equal(base_value, rule_engine_token_type):
     for item in base_value:
@@ -118,15 +127,15 @@ class SimpleRuleEngineTransformer:
         self._visited = {}
 
     def get_rule(self) -> Rule:
-        """get_rule gets the root node of parse lark_tree and processed it's children.
+        """get_rule gets the root node of parse lark_tree and processes it's children.
         Each child of the root node can be a decision rule or a score rule."""
         for rule in self.lark_tree.children:
             if rule.data == self.DECISION_RULE:
                 return self._get_decision_rule(rule)
 
     def _get_decision_rule(self, rule: Tree) -> RuleDecision:
-        """_get_decision_rule get a lark_tree composed of a decision rule.
-        It is composed [0] Rule Name and [1] 1 or more rule rows.
+        """_get_decision_rule gets a lark_tree composed of a decision rule.
+        It is composed a Rule Name and 1 or more rule rows.
         """
         # Decision rule contains multiple children.
         # The first one is the rule name, followed by one or more rule_row.
@@ -158,10 +167,10 @@ class SimpleRuleEngineTransformer:
 
         """
         rulerow contains 4 children namely 
-        [0] "when"
-        [1] condition
-        [2] "then" 
-        [3] decision.
+        - "when"
+        - condition: A condition that's composed of a series of expressions strung together by and / or.
+        - "then" 
+        - decision.
         out of this, decision is processed for consequent and condition is processed for antecedent
         """
         antecedent = self._get_conditional(rule_row.children[1])
@@ -182,26 +191,28 @@ class SimpleRuleEngineTransformer:
             if child.data == self.CONDITIONAL:
                 conditional_queue.put(child.children[0].value)
 
-        return self._get_final_conditional(
+        return self._get_composite_conditional(
             conditional_queue=conditional_queue,
             expression_queue=expression_queue
         )
 
-    def _get_final_conditional(self, *, conditional_queue: Queue, expression_queue: Queue):
+    def _get_composite_conditional(self, *, conditional_queue: Queue, expression_queue: Queue) -> Conditional:
         """
-        _get_final_conditional forms a complex Conditional based on how expressions are strung together
+        _get_composite_conditional forms a complex Conditional based on how expressions are strung together
         Examples:
         1. a and b and c => WhenAll(a, b, c)
         2. a and b or c => WhenAny(WhenAll(a, b), c)
         3. a and b or (c and d) => WhenAny(WhenAll(a, b), WhenAll(c, d))
+        4. a and b and (c and d or (e and f)) => WhenAll(a, b, WhenAny(WhenAll(c, d), WhenAll(e, f)))
         :param conditional_queue:
         :param expression_queue:
-        :return:
+        :return: Conditional
         """
         # Pop conditional queue and combine expressions into a single Conditional
         # Assumption: For one conditional, there would be two expressions.
         final_conditional = None
 
+        # If this is a single expression, wrap this under WhenAll and return 
         if conditional_queue.empty():
             return WhenAll(expression_queue.get())
 
@@ -223,27 +234,34 @@ class SimpleRuleEngineTransformer:
 
     def _get_expression(self, expression: Tree) -> Union[Expression, Conditional]:
         """
-        _get_expression returns either an Expression or a Conditional (if the expression composes an expression)
+        _get_expression returns either an Expression or a Conditional (if the expression contains an expression)
         """
-        # expression contains 3 or 4 children
-        # [0] Token name 
-        # [1] operator 
-        # [2] base value
-        # if operator is between, [2] is treated as floor and [3] is treated as ceiling
-        # An expression can compose an expression, so this needs to be handled.
+        # expression contains either 3 children or 4 children (if operator is between)
+        # - Token name 
+        # - operator 
+        # - base value
+        # if the operator is between, [2] is treated as floor and [3] is treated as ceiling
 
+        # If an expression composes another expression, get this as a Conditional.
         if (
-                type(expression.children[0]).__name__ == "Tree" and
+                type(expression.children[0]).__name__ == self.TREE and
                 expression.children[0].data == self.EXPRESSION
         ):
             return self._get_conditional(expression)
 
         token = self._get_token(expression.children[0], expression.children[2])
-        operator = self._get_operator(expression.children[1], type(token).__name__, *tuple(expression.children[2:]))
+        operator = self._get_operator(
+            *tuple(expression.children[2:]),
+            operator=expression.children[1], 
+            rule_engine_token_type=type(token).__name__
+        )
         expression = Expression(token=token, operator=operator)
         return expression
 
     def _get_token(self, token: Tree, token_type: Tree):
+        """
+        _get_token returns a Simple Rule Engine Token from a lark Tree
+        """
         token_type_str = token_type.children[0].type
         if token_type_str in (self.NUMBER, self.SIGNED_NUMBER):
             return NumericToken(token.children[0].value)
@@ -251,14 +269,12 @@ class SimpleRuleEngineTransformer:
         if token_type_str in (self.STRING, self.WORD, "CNAME", "TRUE", "FALSE"):
             return StringToken(token.children[0].value)
 
-    def _get_operator(self, operator: Union[Tree, Token], rule_engine_token_type: str, *base_value: Tree) -> Operator:
+    def _get_operator(self, *base_value: Tree, operator: Union[Tree, Token], rule_engine_token_type: str,) -> Operator:
         """
-        _get_operator returns an Operator.
+        _get_operator returns an Operator based on operator type and token type.
         """
-        if type(operator).__name__ == self.TREE:
-            operator_type = operator.data
-        else:
-            operator_type = operator.type
+
+        operator_type = operator.data if type(operator).__name__ == self.TREE else operator.type
 
         if operator_type == self.BETWEEN:
             return _get_between(*base_value)
@@ -276,11 +292,7 @@ class SimpleRuleEngineTransformer:
             return _get_equal(base_value, rule_engine_token_type)
 
         if operator_type == self.LT:
-            operator_value = _get_operator_value(base_value)
-            assert operator_value is not None
-            return Lt(operator_value)
+            return _get_less_than(base_value)
 
         if operator_type == self.LTE:
-            operator_value = _get_operator_value(base_value)
-            assert operator_value is not None
-            return Lte(operator_value)
+            return _get_less_than_equal(base_value)
