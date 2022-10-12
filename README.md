@@ -155,8 +155,6 @@ class TestSimpleRuleEngineAdapter(TestCase):
 
 ## Custom SQL Like Rule Grammar
 
-This is currently work in progress.
-
 Here's an illustration of a rule that's based on a [custom grammar](decision_rule.lark) written in [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) and parsed by [Lark](https://github.com/lark-parser/lark).
 
 ### Sample Rule
