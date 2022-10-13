@@ -5,13 +5,6 @@ from simpleruleengine.conditional.conditional import Conditional
 from simpleruleengine.conditional.when_all import WhenAll
 from simpleruleengine.conditional.when_any import WhenAny
 from simpleruleengine.expression.expression import Expression
-from simpleruleengine.operator.between import Between
-from simpleruleengine.operator.string_in import In
-from simpleruleengine.operator.equal import Eq
-from simpleruleengine.operator.greater_than import Gt
-from simpleruleengine.operator.greater_than_equal import Gte
-from simpleruleengine.operator.less_than import Lt
-from simpleruleengine.operator.less_than_equal import Lte
 from simpleruleengine.rule.rule_decision import RuleDecision
 from simpleruleengine.rulerow.rule_row_decision import RuleRowDecision
 from simpleruleengine.ruleset.rule_set_decision import RuleSetDecision
@@ -19,90 +12,13 @@ from simpleruleengine.token.numeric_token import NumericToken
 from simpleruleengine.token.string_token import StringToken
 from simpleruleengine.rule.rule import Rule
 from simpleruleengine.operator.operator import Operator
+
+from services.adapter.simple_rule_engine_adapter import SimpleRuleEngineAdapter
 from services.util import simple_rule_engine_util
 from queue import Queue
 
 
-def _get_between(*base_value: Tree):
-    return Between(
-        floor=float(base_value[0].children[0].value),
-        ceiling=float(base_value[1].children[0].value)
-    )
-
-
-def _get_list_in(base_value):
-    str_in_list: List[str] = []
-    for item in base_value:
-        for child in item.children:
-            str_in_list.append(child.value)
-    return In(*tuple(str_in_list))
-
-
-def _get_operator_value(base_value):
-    operator_value = None
-    for item in base_value:
-        for child in item.children:
-            operator_value = float(child.value)
-    return operator_value
-
-
-def _get_greater_than_equal(base_value):
-    operator_value = _get_operator_value(base_value)
-    assert operator_value is not None
-    return Gte(operator_value)
-
-
-def _get_greater_than(base_value):
-    operator_value = _get_operator_value(base_value)
-    assert operator_value is not None
-    return Gt(operator_value)
-
-def _get_less_than(base_value):
-    operator_value = _get_operator_value(base_value)
-    assert operator_value is not None
-    return Lt(operator_value)
-
-def _get_less_than_equal(base_value):
-    operator_value = _get_operator_value(base_value)
-    assert operator_value is not None
-    return Lte(operator_value)
-
-def _get_equal(base_value, rule_engine_token_type):
-    for item in base_value:
-        for child in item.children:
-            if rule_engine_token_type == "NumericToken":
-                operator_value = float(child.value)
-                return Eq(operator_value)
-
-            if rule_engine_token_type == "StringToken":
-                operator_value = str(child.value)
-                return In(*tuple([operator_value]))
-
-
-def _get_boolean(boolean_token: Token):
-    if boolean_token.value == "true":
-        return True
-    else:
-        return False
-
-
-def _get_number(numeric_token: Token):
-    return float(numeric_token.value)
-
-
-def _get_token_value(token: Tree):
-    if token.data == "boolean":
-        return _get_boolean(token.children[0])
-
-    if token.data == "number":
-        return _get_number(token.children[0])
-
-
-def _get_consequent(consequent: Tree):
-    return _get_token_value(consequent.children[0])
-
-
-class SimpleRuleEngineTransformer:
+class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
     TREE = "Tree"
     TOKEN = "Token"
     DECISION_RULE = "decisionrule"
@@ -123,6 +39,7 @@ class SimpleRuleEngineTransformer:
     CONDITIONAL_OR = "or"
 
     def __init__(self, tree: Tree):
+        super().__init__()
         self.lark_tree = tree
         self._visited = {}
 
@@ -174,7 +91,7 @@ class SimpleRuleEngineTransformer:
         out of this, decision is processed for consequent and condition is processed for antecedent
         """
         antecedent = self._get_conditional(rule_row.children[1])
-        consequent = _get_consequent(rule_row.children[3])
+        consequent = simple_rule_engine_util.get_consequent(rule_row.children[3])
 
         return RuleRowDecision(antecedent=antecedent, consequent=consequent)
 
@@ -252,7 +169,7 @@ class SimpleRuleEngineTransformer:
         token = self._get_token(expression.children[0], expression.children[2])
         operator = self._get_operator(
             *tuple(expression.children[2:]),
-            operator=expression.children[1], 
+            operator=expression.children[1],
             rule_engine_token_type=type(token).__name__
         )
         expression = Expression(token=token, operator=operator)
@@ -269,7 +186,7 @@ class SimpleRuleEngineTransformer:
         if token_type_str in (self.STRING, self.WORD, "CNAME", "TRUE", "FALSE"):
             return StringToken(token.children[0].value)
 
-    def _get_operator(self, *base_value: Tree, operator: Union[Tree, Token], rule_engine_token_type: str,) -> Operator:
+    def _get_operator(self, *base_value: Tree, operator: Union[Tree, Token], rule_engine_token_type: str, ) -> Operator:
         """
         _get_operator returns an Operator based on operator type and token type.
         """
@@ -277,22 +194,22 @@ class SimpleRuleEngineTransformer:
         operator_type = operator.data if type(operator).__name__ == self.TREE else operator.type
 
         if operator_type == self.BETWEEN:
-            return _get_between(*base_value)
+            return simple_rule_engine_util.get_between(*base_value)
 
         if operator_type == self.IN_LIST:
-            return _get_list_in(base_value)
+            return simple_rule_engine_util.get_list_in(base_value)
 
         if operator_type == self.GT:
-            return _get_greater_than(base_value)
+            return simple_rule_engine_util.get_greater_than(base_value)
 
         if operator_type == self.GTE:
-            return _get_greater_than_equal(base_value)
+            return simple_rule_engine_util.get_greater_than_equal(base_value)
 
         if operator_type == self.EQ:
-            return _get_equal(base_value, rule_engine_token_type)
+            return simple_rule_engine_util.get_equal(base_value, rule_engine_token_type)
 
         if operator_type == self.LT:
-            return _get_less_than(base_value)
+            return simple_rule_engine_util.get_less_than(base_value)
 
         if operator_type == self.LTE:
-            return _get_less_than_equal(base_value)
+            return simple_rule_engine_util.get_less_than_equal(base_value)

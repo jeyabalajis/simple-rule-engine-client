@@ -1,18 +1,18 @@
-from unittest import TestCase
 import pytest
 from lark import Lark
 
-from services.transformer.simple_rule_engine_transformer import SimpleRuleEngineTransformer
+from services.adapter.simple_rule_engine_lark_tree_adapter import SimpleRuleEngineLarkTreeAdapter
+
 
 @pytest.fixture
 def decision_rule_grammar():
     with open("./decision_rule.lark") as rule_grammar_file:
         rule_grammar = rule_grammar_file.read()
-    
+
     return rule_grammar
 
-def test_rule_simple_decision(decision_rule_grammar):
 
+def test_rule_simple_decision(decision_rule_grammar):
     parser = Lark(decision_rule_grammar)
 
     custom_rule = """
@@ -34,7 +34,7 @@ def test_rule_simple_decision(decision_rule_grammar):
     tree = parser.parse(custom_rule)
     print(tree.pretty())
 
-    decision_rule = SimpleRuleEngineTransformer(tree).get_rule()
+    decision_rule = SimpleRuleEngineLarkTreeAdapter(tree).get_rule()
 
     facts = dict(
         cibil_score=700,
@@ -52,7 +52,7 @@ def test_rule_simple_decision(decision_rule_grammar):
         pet="pig"
     )
 
-    assert decision_rule.execute(facts) is not True    
+    assert decision_rule.execute(facts) is not True
 
     facts = dict(
         cibil_score=500,
@@ -61,10 +61,10 @@ def test_rule_simple_decision(decision_rule_grammar):
         pet="dog"
     )
 
-    assert decision_rule.execute(facts) is not True  
+    assert decision_rule.execute(facts) is not True
+
 
 def test_rule_complex_decision(decision_rule_grammar):
-
     parser = Lark(decision_rule_grammar)
 
     custom_rule = """
@@ -94,7 +94,7 @@ def test_rule_complex_decision(decision_rule_grammar):
     tree = parser.parse(custom_rule)
     print(tree.pretty())
 
-    decision_rule = SimpleRuleEngineTransformer(tree).get_rule()
+    decision_rule = SimpleRuleEngineLarkTreeAdapter(tree).get_rule()
 
     # Evaluate the Decision Rule by passing data
     facts = dict(
