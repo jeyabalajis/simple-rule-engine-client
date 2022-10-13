@@ -19,18 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="Removed work in progress sentence in README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/simple-rule-engine.iml" beforeDir="false" />
+    <list default="true" id="64ecc611-d158-480d-aba7-aab126f904e7" name="Default" comment="Refactored Lark Tree Adapter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transformer/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/transformer/simple_rule_engine_transformer.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/adapter/simple_rule_engine_lark_tree_adapter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/util/simple_rule_engine_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/util/simple_rule_engine_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_custom_decision_rule_lark.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_custom_decision_rule_lark.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_simple_rule_engine_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_simple_rule_engine_dict_adapter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/adapter/simple_rule_engine_lark_tree_adapter.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/adapter/simple_rule_engine_lark_tree_adapter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665556469542</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Refactored Lark Tree Adapter">
+      <created>1665634951449</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665634951449</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -410,7 +408,8 @@
     <MESSAGE value="shaped the parse tree further for evaluation" />
     <MESSAGE value="Tested Rule Engine Transformer that gets Lark Parse Tree and returns Decision Rule." />
     <MESSAGE value="Removed work in progress sentence in README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed work in progress sentence in README.md" />
+    <MESSAGE value="Refactored Lark Tree Adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Lark Tree Adapter" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1664344728851">
@@ -433,6 +432,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="441" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1665556927355" />
+    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1665635112336">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1665635112336" />
     <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1665551364481">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
