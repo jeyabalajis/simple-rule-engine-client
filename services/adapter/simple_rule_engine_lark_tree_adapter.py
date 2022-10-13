@@ -53,6 +53,12 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
     def _get_decision_rule(self, rule: Tree) -> RuleDecision:
         """_get_decision_rule gets a lark_tree composed of a decision rule.
         It is composed a Rule Name and 1 or more rule rows.
+        Structure of a decision rule:
+        decisionrule
+            rule name
+            rulerow
+            rulerow
+            rulerow...
         """
         # Decision rule contains multiple children.
         # The first one is the rule name, followed by one or more rule_row.
@@ -80,6 +86,12 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
     def _get_rule_row_decision(self, rule_row: Tree) -> RuleRowDecision:
         """
         _get_rule_row_decision gets a rulerow node and returns RuleRowDecision post processing.
+        Structure of rulerow
+        rulerow
+            when
+            condition
+            then
+            decision
         """
 
         """
@@ -98,6 +110,12 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
     def _get_conditional(self, conditional: Tree) -> Conditional:
         """
         _get_conditional gets a condition node and returns a Conditional.
+        Structure of condition
+        condition
+            expression
+            conditional and/or (optional)
+            expression and/or (optional)
+            expression
         """
         conditional_queue = Queue()
         expression_queue = Queue()
@@ -152,6 +170,14 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
     def _get_expression(self, expression: Tree) -> Union[Expression, Conditional]:
         """
         _get_expression returns either an Expression or a Conditional (if the expression contains an expression)
+        Structure of expression
+        expression
+            token
+            operator
+            base value
+        (or)
+        expression
+            expression
         """
         # expression contains either 3 children or 4 children (if operator is between)
         # - Token name 
@@ -177,7 +203,8 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
 
     def _get_token(self, token: Tree, token_type: Tree):
         """
-        _get_token returns a Simple Rule Engine Token from a lark Tree
+        _get_token returns a Simple Rule Engine Token from a lark Tree. Return a specific token (StringToken or
+        NumericToken or BooleanToken) based on the base value that's composed within the expression.
         """
         token_type_str = token_type.children[0].type
         if token_type_str in (self.NUMBER, self.SIGNED_NUMBER):
@@ -188,7 +215,7 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
 
     def _get_operator(self, *base_value: Tree, operator: Union[Tree, Token], rule_engine_token_type: str, ) -> Operator:
         """
-        _get_operator returns an Operator based on operator type and token type.
+        _get_operator returns an Operator based on operator type and token type (StringToken, NumericToken or BooleanToken).
         """
 
         operator_type = operator.data if type(operator).__name__ == self.TREE else operator.type
