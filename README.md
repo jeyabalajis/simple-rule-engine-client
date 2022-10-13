@@ -55,7 +55,7 @@ An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-
 ```python
 from unittest import TestCase
 
-from services.adapter.simple_rule_engine_adapter import SimpleRuleEngineAdapter
+from services.adapter.simple_rule_engine_dict_adapter import SimpleRuleEngineDictAdapter
 from services.util.json_file_util import JsonFileUtil
 
 
@@ -132,7 +132,7 @@ class TestSimpleRuleEngineAdapter(TestCase):
 ```python
 from unittest import TestCase
 
-from services.adapter.simple_rule_engine_adapter import SimpleRuleEngineAdapter
+from services.adapter.simple_rule_engine_dict_adapter import SimpleRuleEngineDictAdapter
 from services.util.json_file_util import JsonFileUtil
 
 
