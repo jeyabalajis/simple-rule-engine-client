@@ -16,9 +16,9 @@ An extension to [Simple Rule Engine](https://github.com/jeyabalajis/simple-rule-
 
 ### Decision matrix
 
-| Bureau Score | Marital Status | Business Ownership | Decision
-| :----------: | :----------------: | :----------------: | --------:|
-| between 650 and 800        | in [Married, Unspecified]                | in [Owned by Self, Owned by Family] | GO       |
+| Bureau Score | Business Ownership | Decision
+| :----------: | :----------------: | --------:|
+| between 650 and 800        | in [Owned by Self, Owned by Family] | GO       |
 
 ### JSON Rule specification
 
