@@ -122,7 +122,7 @@ def test_rule_complex_decision(decision_rule_grammar):
         house_ownership="owned",
         total_overdue_amount=100,
         number_of_overdue_loans=2,
-        big_shot="true",
+        big_shot=True,
         pet="dog"
     )
     assert decision_rule.execute(token_dict=facts) is True
@@ -133,7 +133,7 @@ def test_rule_complex_decision(decision_rule_grammar):
         house_ownership="owned",
         total_overdue_amount=100,
         number_of_overdue_loans=2,
-        big_shot="false",
+        big_shot=False,
         pet="dog"
     )
     assert decision_rule.execute(token_dict=facts) is False

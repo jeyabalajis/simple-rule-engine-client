@@ -7,6 +7,7 @@ from simpleruleengine.operator.greater_than import Gt
 from simpleruleengine.operator.greater_than_equal import Gte
 from simpleruleengine.operator.less_than import Lt
 from simpleruleengine.operator.less_than_equal import Lte
+from simpleruleengine.operator.boolean_operator import BooleanOperator
 from lark import Tree, Token
 
 
@@ -94,6 +95,13 @@ def get_equal(base_value, rule_engine_token_type):
             if rule_engine_token_type == "StringToken":
                 operator_value = str(child.value)
                 return In(*tuple([operator_value]))
+
+            if rule_engine_token_type == "BooleanToken":
+                operator_value = str(child.value)
+                if operator_value == "true":
+                    return BooleanOperator(True)
+                if operator_value == "false":
+                    return BooleanOperator(False)
 
 
 def get_boolean(boolean_token: Token):
