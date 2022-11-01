@@ -10,6 +10,7 @@ from simpleruleengine.rulerow.rule_row_decision import RuleRowDecision
 from simpleruleengine.ruleset.rule_set_decision import RuleSetDecision
 from simpleruleengine.token.numeric_token import NumericToken
 from simpleruleengine.token.string_token import StringToken
+from simpleruleengine.token.boolean_token import BooleanToken
 from simpleruleengine.rule.rule import Rule
 from simpleruleengine.operator.operator import Operator
 
@@ -208,14 +209,18 @@ class SimpleRuleEngineLarkTreeAdapter(SimpleRuleEngineAdapter):
         """
         token_type_str = token_type.children[0].type
         if token_type_str in (self.NUMBER, self.SIGNED_NUMBER):
-            return NumericToken(token.children[0].value)
+            return NumericToken(name=token.children[0].value)
 
-        if token_type_str in (self.STRING, self.WORD, "CNAME", "TRUE", "FALSE"):
-            return StringToken(token.children[0].value)
+        if token_type_str in (self.STRING, self.WORD, "CNAME"):
+            return StringToken(name=token.children[0].value)
+
+        if token_type_str in ("TRUE", "FALSE"):
+            return BooleanToken(name=token.children[0].value)
 
     def _get_operator(self, *base_value: Tree, operator: Union[Tree, Token], rule_engine_token_type: str, ) -> Operator:
         """
-        _get_operator returns an Operator based on operator type and token type (StringToken, NumericToken or BooleanToken).
+        _get_operator returns an Operator based on operator type and token type
+        (StringToken, NumericToken or BooleanToken).
         """
 
         operator_type = operator.data if type(operator).__name__ == self.TREE else operator.type
